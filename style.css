@@ -7,3 +7,8 @@
 img {
     height: 100%;
 }
+
+.button{
+    height: 10vh;
+    width: 10vh;
+}
