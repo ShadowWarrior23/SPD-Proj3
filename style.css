@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+body {
+    background-color: lemonchiffon;
+    min-height: 100vh;
+}
+
 img {
     height: 100%;
 }
@@ -29,6 +34,10 @@ h1 {
 
 nav {
     background-color: rgba(90, 26, 26, 7);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 nav ul {
@@ -40,14 +49,72 @@ nav a {
     text-decoration: none;
 }
 
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: .7rem;
+    font-size: 1.1rem;
+}
+
+nav ul a:hover {
+    background-color: rgb(88, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.cardCust {
+    padding: .5rem;
+    box-shadow: 1px 1px 5px 2px black inset;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: .5rem 0;
+}
+
 button {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
 }
 
+.buts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buts a {
+    padding: .1rem .3rem;
+    background-color: firebrick;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+}
+
 footer {
     background-color: rgb(66, 66, 66);
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
 footer h3 {
@@ -59,10 +126,10 @@ footer p {
     color: white;
 }
 
-#slogen{
-color: rgb(255, 118, 39);
-text-align: center;
-font-size: 1.5rem;
-font-family: 'Pacifico';
-letter-spacing: 3px;
+#slogen {
+    color: rgb(255, 118, 39);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pacifico';
+    letter-spacing: 3px;
 }
