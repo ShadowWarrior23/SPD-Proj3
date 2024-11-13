@@ -18,7 +18,8 @@ h1 {
     color: white;
 }
 
-.button {
-    height: 10vh;
-    width: 10vh;
+button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
 }
