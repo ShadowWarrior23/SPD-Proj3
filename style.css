@@ -19,7 +19,8 @@ header {
     height: 10vh;
     background-image: url(img/header_bg.jpg);
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:center;
     align-items: center;
 }
 
@@ -30,6 +31,12 @@ h1 {
     background-color: rgba(68, 68, 68, .7);
     border-radius: 50px;
     font-family: 'Lobster';
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none; 
 }
 
 nav {
@@ -88,12 +95,6 @@ h3 {
     text-align: center;
     letter-spacing: 1px;
     padding: .5rem 0;
-}
-
-button {
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    border: none;
 }
 
 .buts {
