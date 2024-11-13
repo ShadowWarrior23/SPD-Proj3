@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lobster&family=Pacifico&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -22,7 +24,7 @@ h1 {
     padding: .2rem;
     background-color: rgba(68, 68, 68, .7);
     border-radius: 50px;
-    font-family: ;
+    font-family: 'Lobster';
 }
 
 nav {
@@ -41,8 +43,10 @@ footer {
 
 footer h3 {
     color: rgb(255, 94, 0);
+    font-family: 'Chewy';
 }
 
 footer p {
     color: white;
+    font-family: 'Edu Australia VIC WA NT Hand Precursive';
 }
