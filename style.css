@@ -34,3 +34,15 @@ button {
     color: white;
     border: none;
 }
+
+footer {
+    background-color: rgb(66, 66, 66);
+}
+
+footer h3 {
+    color: rgb(255, 94, 0);
+}
+
+footer p {
+    color: white;
+}
