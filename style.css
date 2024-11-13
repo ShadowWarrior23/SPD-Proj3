@@ -126,6 +126,13 @@ footer p {
     color: white;
 }
 
+footer .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #slogen {
     color: rgb(255, 118, 39);
     text-align: center;
