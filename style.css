@@ -17,7 +17,7 @@ img {
 
 header {
     height: 10vh;
-    background-image: url(./header_bg.jpg);
+    background-image: url(img/header_bg.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,6 +124,13 @@ footer h3 {
 
 footer p {
     color: white;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #slogen {
