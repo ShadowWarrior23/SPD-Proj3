@@ -20,7 +20,7 @@ header {
     background-image: url(img/header_bg.jpg);
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -36,7 +36,7 @@ h1 {
 button {
     background-color: rgba(0, 0, 0, 0);
     color: white;
-    border: none; 
+    border: none;
 }
 
 nav {
@@ -77,8 +77,16 @@ nav ul a {
     font-size: 1.1rem;
 }
 
-nav ul a:hover {
+.nav ul a:hover {
     background-color: rgb(88, 0, 0);
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: flex;
 }
 
 h2 {
