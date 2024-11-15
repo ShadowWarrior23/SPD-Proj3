@@ -33,7 +33,7 @@ header h1 {
     font-family: 'Lobster';
 }
 
- header button {
+header button {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
@@ -45,6 +45,11 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
 }
 
 nav ul {
@@ -70,10 +75,17 @@ nav ul li a:hover {
 
 .hidden {
     display: none;
+    transition: .3s;
 }
 
 .active {
+    transition: .3s;
     display: flex;
+}
+
+#menuline {
+    margin: 0;
+    background-color: rgb(100, 128, 128);
 }
 
 main h2 {
