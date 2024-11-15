@@ -92,14 +92,14 @@ main h3 {
     padding: .5rem 0;
 }
 
-.buts {
+.btns {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.buts a {
-    padding: .1rem .3rem;
+.btns a {
+    padding: .3rem .5rem;
     background-color: firebrick;
     text-align: center;
     text-decoration: none;
