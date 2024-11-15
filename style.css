@@ -24,7 +24,7 @@ header {
     align-items: center;
 }
 
-h1 {
+header h1 {
     text-align: center;
     color: white;
     padding: .2rem;
@@ -33,27 +33,18 @@ h1 {
     font-family: 'Lobster';
 }
 
-button {
+ header button {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
 }
 
 nav {
-    background-color: rgba(90, 26, 26, 7);
+    background-color: rgb(90, 26, 26);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
 }
 
 nav ul {
@@ -65,10 +56,6 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {
-    list-style-type: none;
-}
-
 nav ul a {
     text-decoration: none;
     display: inline-block;
@@ -77,8 +64,8 @@ nav ul a {
     font-size: 1.1rem;
 }
 
-.nav ul a:hover {
-    background-color: rgb(88, 0, 0);
+nav ul li a:hover {
+    background-color: rgb(70, 5, 5);
 }
 
 .hidden {
@@ -89,7 +76,7 @@ nav ul a {
     display: flex;
 }
 
-h2 {
+main h2 {
     text-align: center;
     margin: 1rem 0;
 }
@@ -99,7 +86,7 @@ h2 {
     box-shadow: 1px 1px 5px 2px black inset;
 }
 
-h3 {
+main h3 {
     text-align: center;
     letter-spacing: 1px;
     padding: .5rem 0;
