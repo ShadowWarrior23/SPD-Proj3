@@ -95,7 +95,6 @@ main h2 {
 .cardCust {
     padding: .5rem;
     box-shadow: 1px 1px 5px 2px black inset;
-    margin-bottom: 1rem;
 }
 
 main h3 {
@@ -147,4 +146,10 @@ footer .col {
     font-size: 1.5rem;
     font-family: 'Pacifico';
     letter-spacing: 3px;
+}
+
+@media (max-width: 1399px) {
+    .cardCust {
+        margin-bottom: 1rem;
+    }
 }
