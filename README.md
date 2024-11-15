@@ -7,3 +7,6 @@ Az oldal működése:
 
 
 A folyamat során felmerülő hibák és megoldásaik:
+
+
+A dokumentáció levezetője: "ShadowWarrior23"/"x"
