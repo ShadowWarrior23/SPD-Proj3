@@ -8,7 +8,6 @@
 
 body {
     background-color: lemonchiffon;
-    min-height: 100vh;
 }
 
 img {
@@ -96,6 +95,7 @@ main h2 {
 .cardCust {
     padding: .5rem;
     box-shadow: 1px 1px 5px 2px black inset;
+    margin-bottom: 1rem;
 }
 
 main h3 {
