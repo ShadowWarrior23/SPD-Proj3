@@ -20,3 +20,17 @@ cart0.addEventListener('click', event => {
     cart.classList.toggle('bi-cart-fill');
     cart.classList.toggle('bi-cart4');
 })
+
+const app1 = document.querySelector("#app1");
+const bigCard1 = document.querySelector(".big-card1");
+const x = document.querySelector(".big-card1 button")
+app1.addEventListener("click", () => {
+    bigCard1.classList.toggle("hidden");
+    document.body.style.overflow = 'hidden';
+})
+
+x.addEventListener("click", () => {
+    bigCard1.classList.toggle("hidden");
+    document.body.style.overflow = '';
+})
+

@@ -48,7 +48,7 @@ nav {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 4;
+    z-index: 1;
 }
 
 nav ul {
@@ -128,7 +128,53 @@ main h3 {
     border-radius: 10px;
 }
 
-.btns a:hover {
+.btns a:active {
+    box-shadow: 1px 1px 2px 1px black inset;
+}
+
+.big-card1 {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #8a8a8a;
+    box-shadow: 0 0 100vh 200px #000;
+    
+}
+
+.big-card1 button {
+    margin: -15px 5px;
+    float: right;
+    font-size: 30px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.big-card1 img {
+    height: 35vh;
+    width: 35vh;
+    float: left;
+    margin-right: 10px;
+}
+
+.big-card1 p {
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.big-card1 a {
+    padding: .3rem .5rem;
+    background-color: firebrick;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.big-card1 a:active {
     box-shadow: 1px 1px 2px 1px black inset;
 }
 
