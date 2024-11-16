@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lobster&family=Pacifico&family=Merienda:wght@300..900&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lobster&family=Pacifico&display=swap');
 
 * {
     box-sizing: border-box;
@@ -90,20 +90,19 @@ nav ul li a:hover {
 }
 
 .container {
-    background-color: rgb(255, 240, 175);
     border-radius: 15px;
     margin: 1rem auto;
 }
 
 main h2 {
     text-align: center;
-    font-family: "Merienda", cursive;
 }
 
 .cardCust {
     padding: .5rem;
     box-shadow: 1px 1px 5px 2px black inset;
     margin: 1rem 0;
+    background-color: lemonchiffon;
 }
 
 main h3 {
@@ -126,7 +125,10 @@ main h3 {
     text-decoration: none;
     color: #000;
     border-radius: 10px;
-    font-family: 'Yuji Mai', serif;
+}
+
+.btns a:hover {
+    box-shadow: 1px 1px 2px 1px black inset;
 }
 
 footer {
