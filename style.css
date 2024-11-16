@@ -89,12 +89,12 @@ nav ul li a:hover {
 
 main h2 {
     text-align: center;
-    margin: 1rem 0;
 }
 
 .cardCust {
     padding: .5rem;
     box-shadow: 1px 1px 5px 2px black inset;
+    margin: 1rem 0;
 }
 
 main h3 {
