@@ -16,7 +16,7 @@ img {
 
 header {
     height: 10vh;
-    background-image: url(img/header_bg.jpg);
+    background-image: url(img/header_bg.png);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,10 +66,12 @@ nav ul a {
     color: #fff;
     padding: .7rem;
     font-size: 1.1rem;
+    transition: .2s;
 }
 
 nav ul li a:hover {
     background-color: rgb(70, 5, 5);
+    transition: .2s;
 }
 
 .hidden {
@@ -87,6 +89,12 @@ nav ul li a:hover {
     background-color: rgb(100, 128, 128);
 }
 
+.container {
+    border-radius: 15px;
+    margin: 1rem auto;
+    background-color: rgb(255, 250, 150);
+}
+
 main h2 {
     text-align: center;
 }
@@ -95,12 +103,14 @@ main h2 {
     padding: .5rem;
     box-shadow: 1px 1px 5px 2px black inset;
     margin: 1rem 0;
+    background-color: lemonchiffon;
 }
 
 main h3 {
     text-align: center;
     letter-spacing: 1px;
     padding: .5rem 0;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
 }
 
 .btns {
@@ -118,10 +128,13 @@ main h3 {
     border-radius: 10px;
 }
 
+.btns a:hover {
+    box-shadow: 1px 1px 2px 1px black inset;
+}
+
 footer {
     background-color: rgb(66, 66, 66);
     padding: 1rem;
-    margin-top: 1rem;
 }
 
 footer h3 {
