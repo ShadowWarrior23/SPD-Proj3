@@ -1,3 +1,5 @@
+//Szűrés:
+
 const filter = document.querySelector('.bi-funnel');
 const types = document.querySelector('#types');
 const menuLine = document.querySelector('#menuline');
