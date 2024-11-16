@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lobster&family=Pacifico&family=Merienda:wght@300..900&family=Yuji+Mai&display=swap');
 
 * {
     box-sizing: border-box;
@@ -66,10 +66,12 @@ nav ul a {
     color: #fff;
     padding: .7rem;
     font-size: 1.1rem;
+    transition: .2s;
 }
 
 nav ul li a:hover {
     background-color: rgb(70, 5, 5);
+    transition: .2s;
 }
 
 .hidden {
@@ -87,8 +89,15 @@ nav ul li a:hover {
     background-color: rgb(100, 128, 128);
 }
 
+.container {
+    background-color: rgb(255, 240, 175);
+    border-radius: 15px;
+    margin: 1rem auto;
+}
+
 main h2 {
     text-align: center;
+    font-family: "Merienda", cursive;
 }
 
 .cardCust {
@@ -101,6 +110,7 @@ main h3 {
     text-align: center;
     letter-spacing: 1px;
     padding: .5rem 0;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
 }
 
 .btns {
@@ -116,12 +126,12 @@ main h3 {
     text-decoration: none;
     color: #000;
     border-radius: 10px;
+    font-family: 'Yuji Mai', serif;
 }
 
 footer {
     background-color: rgb(66, 66, 66);
     padding: 1rem;
-    margin-top: 1rem;
 }
 
 footer h3 {
