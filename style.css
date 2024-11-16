@@ -97,7 +97,7 @@ header {
     border-bottom: var(--border);
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -121,11 +121,12 @@ nav a{
     font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
+    font-family: 'Lobster';
 }
 
 nav a:hover{
-    color: rgb(223, 121, 62);
-    border-bottom: 1px solid rgb(184, 133, 103);
+    color: #d3ad7f;
+    border-bottom: 1px solid #d3ad7f;
 }
 
 header .icons a{
@@ -133,6 +134,98 @@ header .icons a{
     cursor: pointer;
     font-size: 1.5rem;
     margin-left: 1rem;
+}
+
+.home{
+    padding: 1rem 7%;
+    background: linear-gradient(rgba(14, 15, 17, 0.9), rgba(9, 9, 10, 0.9)),url("./img/home.jpg");
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.home-inner-content{
+    flex: 1 1 45rem;
+}
+
+.home-text-content{
+    padding: 0 6rem;
+}
+
+.home-text-content h1{
+    font-size: 35px;
+    color: #d3ad7f;
+}
+
+.home-text-content p{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.home-text-content a{
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid orange;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.home-text-content a:hover{
+    background-color: orange;
+}
+
+.about{
+    padding: 1rem 7%;
+    height: 90vh;
+    max-width: 100%;
+    background-color: #1d1c1a;
+
+}
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-content{
+    flex: 1 1 45rem;
+}
+
+.about-inner-content{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.about-content .about-inner-content img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-text-content h1{
+    color: #d3ad7f;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-text-content p{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 35px;
 }
 
 @keyframes rotate360 {
