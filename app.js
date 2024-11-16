@@ -23,14 +23,17 @@ cart0.addEventListener('click', event => {
 
 const app1 = document.querySelector("#app1");
 const bigCard1 = document.querySelector(".big-card1");
-const x = document.querySelector(".big-card1 button")
+const x = document.querySelector(".big-card1 button");
+const overlay = document.querySelector("#overlay");
 app1.addEventListener("click", () => {
     bigCard1.classList.toggle("hidden");
+    overlay.classList.toggle("hidden");
     document.body.style.overflow = 'hidden';
 })
 
 x.addEventListener("click", () => {
     bigCard1.classList.toggle("hidden");
+    overlay.classList.toggle("hidden");
     document.body.style.overflow = '';
 })
 
