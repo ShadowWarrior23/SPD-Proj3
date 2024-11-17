@@ -203,6 +203,22 @@ header .icons a {
 
 }
 
+.about h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+
+.about span {
+    color: #d3ad7f;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+}
+
 .main-about {
     display: flex;
     justify-content: center;
@@ -226,20 +242,6 @@ header .icons a {
     border-radius: 5px;
 }
 
-.about h1 {
-    color: #fff;
-    font-size: 40px;
-    text-align: center;
-    line-height: 1;
-}
-
-
-.about span {
-    color: #d3ad7f;
-    font-size: 40px;
-    text-align: center;
-    line-height: 1;
-}
 
 .about-text-content p {
     color: #fff;
