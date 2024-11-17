@@ -229,6 +229,35 @@ header .icons a{
     line-height: 35px;
 }
 
+footer {
+    background-color: rgb(66, 66, 66);
+    padding: 1rem;
+}
+
+footer h3 {
+    color: rgb(255, 94, 0);
+    font-family: 'Chewy';
+}
+
+footer p {
+    color: white;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slogen {
+    color: rgb(255, 118, 39);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pacifico';
+    letter-spacing: 3px;
+}
+
 @keyframes rotate360 {
     0% {transform: rotate(0);}
     100% {transform: rotate(1turn);}
