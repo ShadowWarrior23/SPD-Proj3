@@ -5,6 +5,12 @@ window.addEventListener("load", () => {
     document.body.classList.add("loaded");
 })
 
+const navbar = document.querySelector("nav");
+const menuButton = document.querySelector("#menu-button")
+menuButton.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+})
+
 const sr = ScrollReveal ({
     distance : '45px',
     duration : 2700,
