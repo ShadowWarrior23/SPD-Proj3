@@ -197,9 +197,9 @@ header .icons a {
 
 .about {
     padding: .5rem 7%;
-    height: 94vh;
+    height: 100vh;
     max-width: 100%;
-    background-color: #1d1c1a;
+    background-color: #000000;
 
 }
 
@@ -209,6 +209,7 @@ header .icons a {
     text-align: center;
     line-height: 1;
     text-transform: uppercase;
+    padding-top: 2rem;
 }
 
 
@@ -247,6 +248,80 @@ header .icons a {
     color: #fff;
     font-size: 1.5rem;
     line-height: 35px;
+    font-family: 'Roboto';
+}
+
+.popular-menu{
+    background-color: #151b20;
+}
+
+.popular-menu h2{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-top: 2rem;
+}
+.popular-menu span{
+    color: #d3ad7f;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+}
+
+.popular-menu .card{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px dashed #00c604;
+}
+
+.popular-menu .card h4{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.popular-menu .card img{
+    border-radius: 15px, 15,6px;
+    object-fit: cover;
+}
+.popular-menu .text-content{
+    color: #fff;
+}
+
+.popular-menu .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00c604;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #00c604;
+}
+
+.main-btn{
+    display: flex;
+    justify-content: space-around;
+}
+.main-btn a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0, 0, 2px, 10px, 1px rgba(0, 0, 0, .9);
+    transition: all 0.4s ease-out 0s;
+    border: 3px solid #00c604;
+    background-color: #00c604;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.main-btn a:hover{
+    background-color: transparent;
+    color: #00c604;
 }
 
 @keyframes rotate360 {
