@@ -20,3 +20,31 @@ const sr = ScrollReveal ({
 sr.reveal('.home-image',{delay:350, origin:'left'})
 sr.reveal('.about-text-content',{delay:350, origin:'right'})
 sr.reveal('#about-image',{delay:350, origin:'left'})
+sr.reveal('.slide-container', {delay:350, origin:'left'})
+
+
+new Swiper(".slide-container", {
+    loop: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    spaceBetween: 20, 
+    slidesPerView: 1, 
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
