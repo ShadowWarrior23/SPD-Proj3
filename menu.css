@@ -140,6 +140,14 @@ header .icons a {
     margin-left: 1rem;
 }
 
+.icons {
+    display: flex;
+}
+
+#mGlass {
+    margin: 0 .5rem;
+}
+
 /*  */
 /* header {
     height: 10vh;
@@ -202,7 +210,8 @@ nav ul li a:hover {
     transition: .2s;
 } */
 
-.hidden {
+.hidden,
+.hidden2 {
     display: none;
     transition: .3s;
 }

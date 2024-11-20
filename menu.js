@@ -24,3 +24,14 @@ x.addEventListener("click", () => {
     overlay.classList.toggle("hidden");
     document.body.style.overflow = '';
 })
+
+//Keresés:
+
+const mGlass = document.getElementById('mGlass');
+const sBar = document.querySelector('.hidden2');
+mGlass.addEventListener('click', event => {
+    sBar.classList.toggle('active');
+    sBar.classList.toggle('hidden');
+})
+
+const sRes = document.querySelector('.control-form')
