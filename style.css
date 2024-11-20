@@ -279,6 +279,53 @@ header .icons a {
     height: auto; 
 }
 
+.slide-container {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 3rem 0;
+}
+
+.slide-container h2{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff; 
+    font-size: 24px; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 5;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.swiper-button-prev {
+    left: 20px; 
+}
+.swiper-button-next {
+    right: 20px; 
+}
 
 .card img {
     width: 100%;
@@ -291,7 +338,7 @@ header .icons a {
     max-width: 300px; 
     margin: 0 auto; 
     background-color: #151b20;
-    border: 2px dashed #00c604;
+    border: 2px solid #00c604;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -336,48 +383,7 @@ header .icons a {
     background-color: transparent;
     color: #00c604;}
 
-.slide-container {
-    width: 100%;
-    max-width: 100%; 
-    margin: 0 auto; 
-    padding: 3rem 0;
-}
 
-.swiper-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.swiper-slide {
-    height: auto; 
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: #fff; 
-    font-size: 24px; 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 5;
-    user-select: none;
-    border-radius: 50%;
-}
-
-.swiper-button-prev {
-    left: 20px; 
-}
-.swiper-button-next {
-    right: 20px; 
-}
 
 
 @keyframes rotate360 {

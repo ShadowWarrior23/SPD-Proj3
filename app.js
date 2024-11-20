@@ -17,10 +17,10 @@ const sr = ScrollReveal ({
     reset : true,
 })
 
-sr.reveal('.home-image',{delay:350, origin:'left'})
-sr.reveal('.about-text-content',{delay:350, origin:'right'})
-sr.reveal('#about-image',{delay:350, origin:'left'})
-sr.reveal('.slide-container', {delay:350, origin:'left'})
+sr.reveal('.home-image',{delay:100, origin:'left'})
+sr.reveal('.about-text-content',{delay:100, origin:'right'})
+sr.reveal('#about-image',{delay:100, origin:'left'})
+sr.reveal('.slide-container', {delay:100, origin:'left'})
 
 
 new Swiper(".slide-container", {
