@@ -45,9 +45,15 @@ cart0.addEventListener('click', event => {
     cart.classList.toggle('bi-cart4');
 })
 
-const details = document.querySelectorAll(".details")
-details.forEach (i => {
-    
+const details = document.querySelectorAll(".details");
+const bigCards = document.querySelectorAll(".big-card");
+const xBtns = document.querySelectorAll(".big-card button");
+const overlays = document.querySelectorAll(".overlay");
+
+details.forEach(detail => {
+    detail.addEventListener("click", () => {
+        
+    })
 })
 
 const bigCard1 = document.querySelector(".big-card1");
