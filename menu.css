@@ -226,7 +226,7 @@ nav ul li a:hover {
 main h2 {
     text-align: center;
     font-family: 'Dancing script';
-    color: #cf1919;
+    color: orange;
     font-size: 2.5rem;
 }
 
@@ -234,7 +234,8 @@ main h2 {
     padding: .5rem;
     box-shadow: 1px 1px 5px 2px black inset;
     margin: 1rem 0;
-    background: linear-gradient(to top left, #ff1212, #ff8c00, #ffd700);
+    background-color: var(--black);
+    border: 2px solid orange;
 }
 
 main h3 {
@@ -242,6 +243,7 @@ main h3 {
     letter-spacing: 1px;
     padding: .5rem 0;
     font-family: "Edu AU VIC WA NT Pre", cursive;
+    color: orange;
 }
 
 .btns {
@@ -252,7 +254,7 @@ main h3 {
 
 .btns a {
     padding: .3rem .5rem;
-    background-color: firebrick;
+    background: linear-gradient(to right, #ff4500, #ff8c00, #ffd700);
     text-align: center;
     text-decoration: none;
     color: #000;
