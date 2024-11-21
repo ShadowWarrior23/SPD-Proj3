@@ -50,13 +50,20 @@ const bigCards = document.querySelectorAll(".big-card");
 const xBtns = document.querySelectorAll(".big-card button");
 const overlays = document.querySelectorAll(".overlay");
 
-details.forEach(detail => {
-    detail.addEventListener("click", () => {
-        
+for (let i = 0; i <= 27; i++) {
+    details[i].addEventListener("click", () => {
+        bigCards[i].classList.toggle("hidden");
+        overlays[i].classList.toggle("hidden");
+        document.body.style.overflow = 'hidden';
     })
-})
+    xBtns[i].addEventListener("click", () => {
+        bigCards[i].classList.toggle("hidden");
+        overlays[i].classList.toggle("hidden");
+        document.body.style.overflow = '';
+    })
+}
 
-const bigCard1 = document.querySelector(".big-card1");
+/* const bigCard1 = document.querySelector(".big-card1");
 const x1 = document.querySelector(".big-card1 button");
 const overlay1 = document.querySelector("#overlay1");
 app1.addEventListener("click", () => {
@@ -66,7 +73,8 @@ app1.addEventListener("click", () => {
 })
 
 x1.addEventListener("click", () => {
-   bigCard1.classList.toggle("hidden");
+    bigCard1.classList.toggle("hidden");
     overlay1.classList.toggle("hidden");
     document.body.style.overflow = '';
 })
+ */
