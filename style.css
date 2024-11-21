@@ -134,11 +134,25 @@ nav a:hover {
     border-bottom: 1px solid #d3ad7f;
 }
 
-header .icons a {
+.icons a {
     color: #fff;
     cursor: pointer;
     font-size: 1.5rem;
     margin-left: 1rem;
+}
+
+.icons span{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 2px;
 }
 
 #menu-button {
@@ -331,7 +345,6 @@ header .icons a {
     width: 100%;
     height: auto;
     object-fit: cover; 
-    border-radius: 15px;
 }
 
 .card {
@@ -342,6 +355,11 @@ header .icons a {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
+}
+
+.card:hover{
+    scale: 1.03;
+    transition: 0.3s;
 }
 
 .card h4{
@@ -453,5 +471,10 @@ header .icons a {
     header nav a:hover {
         color: #d3ad7f;
         border-bottom: 1px solid #d3ad7f;
+    }
+
+    .icons span{
+        top: 30%;
+        right: 30px;
     }
 }
