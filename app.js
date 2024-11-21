@@ -62,19 +62,3 @@ for (let i = 0; i <= 27; i++) {
         document.body.style.overflow = '';
     })
 }
-
-/* const bigCard1 = document.querySelector(".big-card1");
-const x1 = document.querySelector(".big-card1 button");
-const overlay1 = document.querySelector("#overlay1");
-app1.addEventListener("click", () => {
-    bigCard1.classList.toggle("hidden");
-    overlay1.classList.toggle("hidden");
-    document.body.style.overflow = 'hidden';
-})
-
-x1.addEventListener("click", () => {
-    bigCard1.classList.toggle("hidden");
-    overlay1.classList.toggle("hidden");
-    document.body.style.overflow = '';
-})
- */
