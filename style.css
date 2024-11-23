@@ -141,7 +141,7 @@ nav a:hover {
     margin-left: 1rem;
 }
 
-.icons span{
+.icons span {
     border-radius: 50%;
     height: 20px;
     width: 20px;
@@ -152,11 +152,82 @@ nav a:hover {
     justify-content: center;
     position: absolute;
     top: 20%;
-    right: 10px;
+    right: 12px;
 }
 
 #menu-button {
     display: none;
+}
+
+.shopping-cart {
+    position: fixed;
+    top: 0;
+    right: 10%;
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: #03080a;
+    box-shadow: -2px solid 4px hsl(0, 4% 15% / 10%);
+    border: 1px solid rgba(0, 0, 0, .5);
+    transition: 1.5s;
+    z-index: 5;
+}
+
+.shopping-cart.active {
+    right: 0;
+    transition: .5s;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid #fff;
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.total-price {
+    margin-left: .5rem;
+    color: #fff;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #ffc107;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    color: #fff;
+}
+
+#cart-close {
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .home {
@@ -266,11 +337,11 @@ nav a:hover {
 }
 
 
-.popular-menu{
+.popular-menu {
     background-color: #151b20;
 }
 
-.popular-menu h2{
+.popular-menu h2 {
     color: #fff;
     font-size: 40px;
     text-align: center;
@@ -278,7 +349,8 @@ nav a:hover {
     text-transform: uppercase;
     padding-top: 2rem;
 }
-.popular-menu span{
+
+.popular-menu span {
     color: #d3ad7f;
     font-size: 40px;
     text-align: center;
@@ -290,17 +362,17 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; 
+    height: auto;
 }
 
 .slide-container {
     width: 100%;
-    max-width: 100%; 
-    margin: 0 auto; 
+    max-width: 100%;
+    margin: 0 auto;
     padding: 3rem 0;
 }
 
-.slide-container h2{
+.slide-container h2 {
     color: #d3ad7f;
     font-size: 40px;
     text-align: center;
@@ -316,8 +388,8 @@ nav a:hover {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff; 
-    font-size: 24px; 
+    color: #fff;
+    font-size: 24px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -335,21 +407,22 @@ nav a:hover {
 }
 
 .swiper-button-prev {
-    left: 20px; 
+    left: 20px;
 }
+
 .swiper-button-next {
-    right: 20px; 
+    right: 20px;
 }
 
 .card img {
     width: 100%;
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .card {
-    max-width: 300px; 
-    margin: 0 auto; 
+    max-width: 300px;
+    margin: 0 auto;
     background-color: #151b20;
     border: 2px solid #00c604;
     border-radius: 10px;
@@ -357,12 +430,12 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
-.card:hover{
+.card:hover {
     scale: 1.03;
     transition: 0.3s;
 }
 
-.card h4{
+.card h4 {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -370,7 +443,7 @@ nav a:hover {
     padding: 1rem 0;
 }
 
-.card span{
+.card span {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
@@ -379,11 +452,12 @@ nav a:hover {
     border-bottom: 1px solid #00c604;
 }
 
-.main-btn{
+.main-btn {
     display: flex;
     justify-content: space-around;
 }
-.main-btn a{
+
+.main-btn a {
     text-decoration: none;
     padding: 10px 10px;
     font-size: 15px;
@@ -397,39 +471,40 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.main-btn a:hover{
+.main-btn a:hover {
     background-color: transparent;
-    color: #00c604;}
+    color: #00c604;
+}
 
 
-    footer {
-        background-color: rgb(0, 0, 0);
-        padding: 1rem;
-    }
-    
-    footer h3 {
-        color: rgb(255, 94, 0);
-        font-family: 'Chewy';
-    }
-    
-    footer p {
-        color: white;
-    }
-    
-    footer .col {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #slogen {
-        color: rgb(255, 118, 39);
-        text-align: center;
-        font-size: 1.5rem;
-        font-family: 'Pacifico';
-        letter-spacing: 3px;
-    }
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+}
+
+footer h3 {
+    color: rgb(255, 94, 0);
+    font-family: 'Chewy';
+}
+
+footer p {
+    color: white;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slogen {
+    color: rgb(255, 118, 39);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pacifico';
+    letter-spacing: 3px;
+}
 
 
 @keyframes rotate360 {
@@ -473,7 +548,7 @@ nav a:hover {
         border-bottom: 1px solid #d3ad7f;
     }
 
-    .icons span{
+    .icons span {
         top: 30%;
         right: 30px;
     }
