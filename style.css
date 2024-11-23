@@ -162,15 +162,15 @@ nav a:hover {
 .shopping-cart {
     position: fixed;
     top: 0;
-    right: 10%;
+    right: -100%;
     width: 360px;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 20px;
-    background-color: #03080a;
+    background-color: rgba(0, 0, 0, .9);
     box-shadow: -2px solid 4px hsl(0, 4% 15% / 10%);
-    border: 1px solid rgba(0, 0, 0, .5);
+    border: 1px solid rgba(83, 78, 78, 0.5);
     transition: 1.5s;
     z-index: 5;
 }
@@ -184,14 +184,60 @@ nav a:hover {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
+    font-family: 'Lobster';
+    color: #d3ad7f;
 }
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    border: 2px solid #d3ad7f;
+  }
+  
+  .cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .detail-box{
+    display: grid;
+    row-gap: .5rem;
+  }
+  
+  .cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .cart-price{
+    font-weight: 500;
+  }
+  
+  .cart-quantity{
+    border: 1px solid #171427;
+    outline-color: #0f0f1a;
+    width: 4rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .cart-remove{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    right: 12px;
+  }
 
 .total {
     display: flex;
     justify-content: flex-end;
     margin-top: 1.5rem;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #d3ad7f;
 }
 
 .total-title {
@@ -457,7 +503,7 @@ nav a:hover {
     justify-content: space-around;
 }
 
-.main-btn a {
+.main-btn button {
     text-decoration: none;
     padding: 10px 10px;
     font-size: 15px;
@@ -471,7 +517,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.main-btn a:hover {
+.main-btn button:hover {
     background-color: transparent;
     color: #00c604;
 }

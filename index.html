@@ -39,23 +39,25 @@
             <span id="quantity">0</span>
             <a href="#"><i class="fa-solid fa-bars" id="menu-button"></i></a>
         </div>
+
+        <div class="shopping-cart">
+            <h2 class="cart-title">Your Cart</h2>
+        
+            <div class="cart-content">
+        
+            </div>
+        
+            <div class="total">
+              <div class="total-title">Overall:</div>
+              <div class="total-price">$0</div>
+            </div>
+        
+            <button type="button" class="btn-buy" id="btn-buy">Purchase</button>
+        
+            <i class="fa-solid fa-times" id="cart-close"></i>
+          </div>
     </header>
-    <div class="shopping-cart">
-        <h2 class="cart-title">A Kosarad</h2>
     
-        <div class="cart-content">
-    
-        </div>
-    
-        <div class="total">
-          <div class="total-title">Összesen:</div>
-          <div class="total-price">0 Ft</div>
-        </div>
-    
-        <button type="button" class="btn-buy">Vásárlás</button>
-    
-        <i class="fa-solid fa-times" id="cart-close"></i>
-      </div>
     <main>
         <section id="home">
             <div class="home">
@@ -78,13 +80,18 @@
         </section>
         <section id="about">
             <div class="about">
-                <h1><span>About</span> us</h1>
-                <div class="main-about">
-                    <div class="about-content">
-                        <div class="about-inner-content">
-                            <img src="./img/logo.png" alt="" id="about-image">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="about-content">
+                            <div class="about-inner-content">
+                                <img src="./img/logo.png" alt="" id="about-image">
+                            </div>
                         </div>
                     </div>
+                    <div class="col-12 col-lg-6">
+                        <h1><span>About</span> us</h1>
+                <div class="main-about">
+                    
                     <div class="about-content">
                         <div class="about-inner-content">
                             <div class="about-text-content">
@@ -97,6 +104,8 @@
                                     chef-curated seasonal dishes, each bite tells a story of creativity.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
                     </div>
                 </div>
             </div>
@@ -123,8 +132,8 @@
                                         <h4>Flame-kissed steaks</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -137,8 +146,8 @@
                                         <h4>Molten Lava Pasta</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -149,10 +158,10 @@
                                         class="img-fluid">
                                     <div class="p-4">
                                         <h4>The Pyro Pizza</h4>
-                                        <span>$10.50</span>
+                                        <span>$19.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -165,8 +174,8 @@
                                         <h4>Blazing Bison Burger</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -179,8 +188,8 @@
                                         <h4>Molten Lava Delight</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -193,8 +202,8 @@
                                         <h4>Spicy Spinach Dip</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -215,8 +224,8 @@
                                         <h4>Flame-kissed steaks</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -229,8 +238,8 @@
                                         <h4>Molten Lava Pasta</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -243,8 +252,8 @@
                                         <h4>Blazing Hearth Pizza</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -257,8 +266,8 @@
                                         <h4>Blazing Hearth Pizza</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -271,8 +280,8 @@
                                         <h4>Blazing Hearth Pizza</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -285,8 +294,8 @@
                                         <h4>Blazing Hearth Pizza</h4>
                                         <span>$10.50</span>
                                         <div class="mt-4 main-btn">
-                                            <a href="#">Details</a>
-                                            <a href="#">Add to cart</a>
+                                            <button>Details</button>
+                                            <button class="add-cart">Add to Cart</button>
                                         </div>
                                     </div>
                                 </div>

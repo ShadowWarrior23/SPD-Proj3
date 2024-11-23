@@ -49,163 +49,94 @@ new Swiper(".slide-container", {
     },
 });
 
-
-const cartIcon = document.querySelector(".cart-icon");
+const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".shopping-cart");
 const closeCart = document.querySelector("#cart-close");
+const cartContent = document.querySelector(".cart-content");
+const totalPriceElement = document.querySelector(".total-price");
+const cartCountElement = document.querySelector("#quantity");
+let itemsAdded = [];
 
+cartIcon.addEventListener("click", () => cart.classList.add("active"));
+closeCart.addEventListener("click", () => cart.classList.remove("active"));
 
-cartIcon.addEventListener('click', () => {
-  cart.classList.add('active');
-})
+document.querySelectorAll(".add-cart").forEach(button =>
+    button.addEventListener("click", function () {
+      const product = this.closest(".card");
+      const title = product.querySelector("h4").textContent;
+      const price = product.querySelector("span").textContent;
+      const imgSrc = product.querySelector("img").src;
+  
 
-closeCart.addEventListener('click', () => {
-  cart.classList.remove('active');
-});
+      if (itemsAdded.some(item => item.title === title)) {
+        alert("This item is already in the cart!");
+        return;
+      }
 
-if (document.readyState == "loading") {
-  document.addEventListener('DOMContentLoaded', start);
-}
-else {
-  start();
-}
+  
+      itemsAdded.push({ title, price, imgSrc, quantity: 1 });
+      updateCart();
+    })
+  );
+  
+  cartContent.addEventListener("click", function (e) {
+    if (e.target.classList.contains("cart-remove")) {
+      const title = e.target.closest(".cart-box").querySelector(".cart-product-title").textContent;
+      itemsAdded = itemsAdded.filter(item => item.title !== title);
+      updateCart();
+    }
+  });
+  
 
-
-function start() {
-  addEvents();
-  updateCartCount();
-  updateTotal();
-
-}
-
-function update() {
-  addEvents();
-  updateTotal();
-
-}
-
-function addEvents() {
-  const cartRemove_btns = document.querySelectorAll(".cart-remove");
-  cartRemove_btns.forEach((btn) => {
-    btn.addEventListener("click", handle_removeCartItem);
+  cartContent.addEventListener("input", function (e) {
+    if (e.target.classList.contains("cart-quantity")) {
+      const cartBox = e.target.closest(".cart-box");
+      const title = cartBox.querySelector(".cart-product-title").textContent;
+      const newQuantity = parseInt(e.target.value);
+  
+      const item = itemsAdded.find(item => item.title === title);
+      if (item) {
+        item.quantity = newQuantity;
+        updateCart();
+      }
+    }
   });
 
-
-  const cartQuantity_inputs = document.querySelectorAll('.cart-quantity');
-  cartQuantity_inputs.forEach(input => {
-    input.addEventListener("change", handle_changeItemQuantity);
-  });
-
-  const addCart_btns = document.querySelectorAll(".add-cart");
-  addCart_btns.forEach(btn => {
-    btn.addEventListener("click", handle_addCartItem);
-  });
-
-  const buy_btn = document.querySelector(".btn-buy")
-  buy_btn.addEventListener("click", handle_buyOrder);
-
-}
-
-let itemsAdded = []
-
-function handle_addCartItem() {
-  const product = this.parentElement;
-  const title = product.querySelector(".product-title").innerHTML;
-  const price = product.querySelector(".product-price").innerHTML;
-  const imgSrc = product.querySelector(".product-img").src;
-
-
-  const newtoAdd = {
-    title,
-    price,
-    imgSrc,
-  };
-
-  if (itemsAdded.find((el) => el.title == newtoAdd.title)) {
-    alert("Már benne van a kosárba");
-    return;
-  }
-  else {
-    itemsAdded.push(newtoAdd)
+  function updateCart() {
+    cartContent.innerHTML = itemsAdded
+      .map(
+        item => `
+        <div class="cart-box">
+          <img src="${item.imgSrc}" alt="" class="cart-img">
+          <div class="detail-box">
+            <div class="cart-product-title">${item.title}</div>
+            <div class="cart-price">${item.price}</div>
+            <input type="number" value="${item.quantity}" class="cart-quantity" min="1">
+          </div>
+          <i class="fa-solid fa-trash cart-remove"></i>
+        </div>
+      `
+      )
+      .join("");
+  
+    const total = itemsAdded.reduce((sum, item) => {
+      const itemPrice = parseFloat(item.price.replace("$", ""));
+      return sum + itemPrice * item.quantity;
+    }, 0);
+  
+    totalPriceElement.textContent = `$${total.toFixed(2)}`;
+    cartCountElement.textContent = itemsAdded.reduce((count, item) => count + item.quantity, 0);
   }
 
+  const purchaseButton = document.querySelector("#btn-buy");
+  purchaseButton.addEventListener("click", () => {
+    if(itemsAdded.length === 0 ){
+        alert("Your cart is empty!");
+    }
+    else{
+    alert("Thank you for your purchase!")};
 
-  const cartBoxElement = cartBoxComponent(title, price, imgSrc);
-  const newNode = document.createElement("div");
-  newNode.innerHTML = cartBoxElement;
-  const cartContent = cart.querySelector(".cart-content");
-  cartContent.appendChild(newNode);
-
-
-  update()
-  updateCartCount();
-}
-
-
-
-
-function handle_removeCartItem() {
-  this.parentElement.remove();
-  itemsAdded = itemsAdded.filter(el => el.title != this.parentElement.querySelector('.cart-product-title').innerHTML)
-
-  update();
-  updateCartCount();
-}
-
-function handle_changeItemQuantity() {
-  if (isNaN(this.value) || this.value < 1) {
-    this.value = 1;
-  }
-  this.value = Math.floor(this.value);
-
-  update()
-}
-
-function handle_buyOrder(){
-  if(itemsAdded.length <= 0) {
-    alert("Nincs semmi a kosárba");
-    return;
-  }
-  const cartContent = cart.querySelector(".cart-content");
-  cartContent.innerHTML = "";
-  alert("Köszönjük a rendelését.");
-  itemsAdded = [];
-
-  update();
-  updateCartCount();
-}
-
-
-function updateTotal() {
-  const cartBoxes = document.querySelectorAll(".cart-box");
-  const totalElement = cart.querySelector(".total-price");
-  let total = 0;
-  cartBoxes.forEach(cartBox => {
-    let priceElement = cartBox.querySelector(".cart-price");
-    let price = parseFloat(priceElement.innerHTML.replace("Ft", ""));
-    let quantity = cartBox.querySelector(".cart-quantity").value;
-    total += price * quantity;
-  });
-
-  total = total.toFixed(2);
-
-  totalElement.innerHTML = total + " Ft";
-}
-
-function updateCartCount() {
-  const cartCountElement = document.querySelector('.cart-count');
-  cartCountElement.textContent = itemsAdded.length;
-}
-
-
-function cartBoxComponent(title, price, imgSrc) {
-  return `<div class="cart-box">
-              <img src=${imgSrc} alt="" class="cart-img">
-              <div class="detail-box">
-                <div class="cart-product-title">${title}</div>
-                <div class="cart-price">${price}</div>
-                <input type="number" value="1" class="cart-quantity">
-              </div>
-              <i class="fa-solid fa-trash cart-remove"></i>
-          </div>`
-}
+    itemsAdded =[];
+    updateCart()
+  })
+  
