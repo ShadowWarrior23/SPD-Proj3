@@ -35,9 +35,6 @@ filter0.addEventListener('click', event => {
     filter.classList.toggle('bi-funnel');
 })
 
-
-//Kosár:
-
 const cart0 = document.querySelector('#cartOpen0');
 const cart = document.querySelector('#cartOpen');
 cart0.addEventListener('click', event => {
