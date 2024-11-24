@@ -43,7 +43,7 @@ sRes.addEventListener('input', event => {
         if (sVal == '') {
             cards[i].style.display = 'flex'
         }
-        if (sVal.includes(cards[i].querySelector('h3'))) {
+        if (sVal in cards[i].querySelector('h3')) {
             cards[i].style.display = 'none'
         }
     }
