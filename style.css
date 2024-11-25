@@ -229,6 +229,13 @@ header .icons a{
     line-height: 35px;
 }
 
+.main-btn button:hover {
+    background-color: transparent;
+    color: #00c604;
+}
+
+
+
 footer {
     background-color: rgb(66, 66, 66);
     padding: 1rem;
