@@ -34,4 +34,17 @@ mGlass.addEventListener('click', event => {
     sBar.classList.toggle('hidden');
 })
 
-const sRes = document.querySelector('.control-form')
+const sRes = document.querySelector('.form-control');
+sRes.addEventListener('input', event => {
+    const sVal = sRes.value;
+    const foodNames = document.querySelectorAll('main h3');
+    const cards = document.querySelectorAll('.cardCust');
+    for (let i = 0; i < cards.length; i++) {
+        if (sVal == '') {
+            cards[i].style.display = 'flex'
+        }
+        if (sVal in cards[i].querySelector('h3')) {
+            cards[i].style.display = 'none'
+        }
+    }
+})
