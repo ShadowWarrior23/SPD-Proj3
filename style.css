@@ -522,6 +522,44 @@ nav a:hover {
     color: #00c604;
 }
 
+.contact-container{
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background-color: #1f2029;
+    box-shadow: 0 0 1rem hsla(0, 1%, 47%, 0.16);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.form-container{
+    padding: 20px;
+}
+
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #00c604;
+}
+
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact-form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #2c2f48;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+}
 
 footer {
     background-color: rgb(0, 0, 0);
