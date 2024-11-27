@@ -548,7 +548,7 @@ nav a:hover {
 }
 
 .contact{
-    padding: 8rem 7%;
+    padding: 6rem 7%;
     height: 80vh;
     max-width: 100%;
     background-color: #0f0b0b;
@@ -571,13 +571,23 @@ nav a:hover {
     padding: 20px;
 }
 
-.form-container h4{
+.form-container span{
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #d3ad7f;
     text-align: center;
 }
+
+.form-container h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+
 
 .contact-form{
     display: grid;
@@ -604,7 +614,7 @@ nav a:hover {
     margin: 0;
 }
 
-.form-container textarea{
+.contact-form textarea{
     border: none;
     outline: none;
     background-color: #373b5c;
