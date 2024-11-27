@@ -48,7 +48,7 @@ for (let i = 1; i <= 28; i++) {
     })
 }
 
-//Szűrés:
+/* //Szűrés:
 
 const filter = document.querySelector('.bi-funnel');
 const filter0 = document.querySelector('#funnel');
@@ -67,7 +67,7 @@ cart0.addEventListener('click', event => {
     cart.classList.toggle('bi-cart-fill');
     cart.classList.toggle('bi-cart4');
 })
-
+ */
 const details = document.querySelectorAll(".details");
 const bigCards = document.querySelectorAll(".big-card");
 const xBtns = document.querySelectorAll(".big-card button");

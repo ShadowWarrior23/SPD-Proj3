@@ -2,5 +2,5 @@ const texts = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolori
 
 const ps = document.querySelectorAll(".big-cards p");
 ps.forEach(p => {
-    p.innerText = texts[0]
+    p.innerText = texts[0] 
 })

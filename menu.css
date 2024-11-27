@@ -214,17 +214,17 @@ main h3 {
     box-shadow: 1px 1px 2px 1px black inset;
 }
 
-.big-card1 {
+.big-card {
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 100vh;
-    width: 70%;
+    height: 70vh;
+    width: 100%;
     margin: 0 auto;
     background-color: #8a8a8a;
 }
 
-.big-card1 button {
+.big-card button {
     margin: -15px 5px;
     float: right;
     font-size: 30px;
@@ -232,26 +232,26 @@ main h3 {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.big-card1 button:active {
+.big-card button:active {
     color: red;
     transition: .2s;
 }
 
-.big-card1 img {
+.big-card img {
     height: 35vh;
     width: 35vh;
     float: left;
     margin-right: 10px;
 }
 
-.big-card1 p {
+.big-card p {
     letter-spacing: 1px;
     line-height: 2rem;
 }
 
-.big-card1 a {
+.big-card a {
     padding: .3rem .5rem;
-    background-color: firebrick;
+    background: linear-gradient(to right, #ff4500, #ff8c00, #ffd700);
     text-align: center;
     text-decoration: none;
     color: #000;
@@ -259,7 +259,7 @@ main h3 {
     margin: 0 auto;
 }
 
-.big-card1 a:active {
+.big-card a:active {
     box-shadow: 1px 1px 2px 1px black inset;
 }
 
@@ -268,7 +268,7 @@ main h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.9);
     z-index: 9;
 }
