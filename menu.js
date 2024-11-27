@@ -34,17 +34,35 @@ mGlass.addEventListener('click', event => {
     sBar.classList.toggle('hidden');
 })
 
-const sRes = document.querySelector('.form-control');
-sRes.addEventListener('input', event => {
-    const sVal = sRes.value;
-    const foodNames = document.querySelectorAll('main h3');
+/* function search0() {
+    //const sRes = document.querySelector('.form-control');
+    const sVal = String(sRes.value).toUpperCase();
     const cards = document.querySelectorAll('.cardCust');
     for (let i = 0; i < cards.length; i++) {
-        if (sVal == '') {
-            cards[i].style.display = 'flex'
-        }
-        if (sVal in cards[i].querySelector('h3')) {
-            cards[i].style.display = 'none'
+        const name = document.querySelector('.cardCust h3');
+        const nameCont = name.textContent;
+        if (String(name).toUpperCase().indexOf(sVal) > -1) {
+            //cards[i].classList.toggle('hidden');
+            cards[i].style.display = "none";
+        }else {
+            cards[i].style.display = "block";
+            //cards[i].classList.toggle('hidden');
         }
     }
-})
+}
+
+const sRes = document.querySelector('.form-control');
+sRes.addEventListener('input', event => {
+    search0();
+}) */
+
+/* const foodNames = document.querySelectorAll('main h3');
+const cards = document.querySelectorAll('.cardCust');
+for (let i = 0; i < cards.length; i++) {
+    if (sVal == '') {
+        cards[i].style.display = 'flex'
+    }
+    if (sVal in cards[i].querySelector('h3')) {
+        cards[i].style.display = 'none'
+    }
+}*/
