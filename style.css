@@ -278,7 +278,7 @@ nav a:hover {
 
 .home {
     padding: 1rem 7%;
-    background: linear-gradient(rgba(14, 15, 17, 0.9), rgba(9, 9, 10, 0.9)), url("./img/home.png");
+    background: linear-gradient(rgba(14, 15, 17, 0.9), rgba(9, 9, 10, 0.9)), url("./pics/home.png");
     height: 90vh;
     background-position: center;
     background-size: cover;
