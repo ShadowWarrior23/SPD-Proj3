@@ -220,10 +220,11 @@ main h3 {
     height: 70vh;
     width: 100%;
     margin: 0 auto;
-    background-color: #8a8a8a;
+    background-color: #0c0e26;
 }
 
 .big-card button {
+    color: #fff;
     margin: -15px 5px;
     float: right;
     font-size: 30px;
@@ -246,6 +247,7 @@ main h3 {
 .big-card p {
     letter-spacing: 1px;
     line-height: 2rem;
+    color: #fff;
 }
 
 .big-card a {
