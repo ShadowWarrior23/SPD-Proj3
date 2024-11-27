@@ -1,4 +1,10 @@
-const bigCardsDiv = document.querySelector(".big-cards");
+const bigCardsDivs = document.querySelectorAll(".big-cards");
+const bigCardsDiv1 = document.querySelector(".big-cards1");
+const bigCardsDiv2 = document.querySelector(".big-cards2");
+const bigCardsDiv3 = document.querySelector(".big-cards3");
+const bigCardsDiv4 = document.querySelector(".big-cards4");
+const bigCardsDiv5 = document.querySelector(".big-cards5");
+const bigCardsDiv6 = document.querySelector(".big-cards6");
 for (let i = 1; i <= 28; i++) {
     const div = document.createElement("div");
     div.classList.add("big-card", `big-card${i}`, "hidden");
@@ -15,11 +21,31 @@ for (let i = 1; i <= 28; i++) {
     a.href = "#";
     a.innerHTML = `<i class="bi bi-cart4 addCart"></i>`;
     div.appendChild(a);
-    bigCardsDiv.appendChild(div);
+    if (i <= 4) {
+        bigCardsDiv1.appendChild(div);
+    }
+    else if (i <= 8) {
+        bigCardsDiv2.appendChild(div);
+    }
+    else if (i <= 12) {
+        bigCardsDiv3.appendChild(div);
+    }
+    else if (i <= 20) { 
+        bigCardsDiv4.appendChild(div);
+    }
+    else if (i <= 24) { 
+        bigCardsDiv5.appendChild(div);
+    }
+    else {
+        bigCardsDiv6.appendChild(div);
+    }
+
     const overlay = document.createElement("div");
     overlay.id = `overlay${i}`
     overlay.classList.add("overlay", "hidden");
-    bigCardsDiv.appendChild(overlay);
+    bigCardsDivs.forEach(card => {
+        card.appendChild(overlay)
+    })
 }
 
 //Szűrés:
