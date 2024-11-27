@@ -522,6 +522,38 @@ nav a:hover {
     color: #00c604;
 }
 
+.full-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.full-menu a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0, 0, 2px, 10px, 1px rgba(0, 0, 0, .9);
+    transition: all 0.4s ease-out 0s;
+    border: 3px solid #00c604;
+    background-color: #00c604;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.full-menu a:hover{
+    background-color: transparent;
+    color: #00c604;
+}
+
+.contact{
+    padding: 8rem 7%;
+    height: 80vh;
+    max-width: 100%;
+    background-color: #0f0b0b;
+}
+
 .contact-container{
     max-width: 960px;
     margin: 0 auto;
@@ -529,7 +561,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    background-color: #1f2029;
+    background-color: #1d1e24;
     box-shadow: 0 0 1rem hsla(0, 1%, 47%, 0.16);
     border-radius: 0.5rem;
     overflow: hidden;
@@ -539,11 +571,12 @@ nav a:hover {
     padding: 20px;
 }
 
-.form-container h3{
-    font-size: 1.2rem;
+.form-container h4{
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #00c604;
+    color: #d3ad7f;
+    text-align: center;
 }
 
 .contact-form{
@@ -551,7 +584,11 @@ nav a:hover {
     row-gap: 1rem;
 }
 
-.contact-form input{
+.registration-inputs{
+    display: grid;
+    row-gap: 1rem;
+}
+.registration-inputs input{
     width: 100%;
     border: none;
     outline: none;
@@ -559,6 +596,45 @@ nav a:hover {
     padding: 10px;
     font-size: 0.9rem;
     color: #fff;
+    border-radius: 5px;
+}
+
+.registration-inputs input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-container textarea{
+    border: none;
+    outline: none;
+    background-color: #373b5c;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.send-button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #00c604;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.send-button:hover{
+    background-color: transparent;
+    color: #00c604;
+}
+
+.map{
+    height: 100%;
+    width: 100%;
 }
 
 footer {
