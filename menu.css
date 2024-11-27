@@ -140,7 +140,7 @@ main h3 {
     width: 100%;
     margin: 0 auto;
     background-color: #8a8a8a;
-    
+
 }
 
 .big-card button {
@@ -185,8 +185,7 @@ main h3 {
     height: 100%;
     background: rgba(0, 0, 0, .9);
     z-index: 9;
-  }
-  
+}
 
 footer {
     background-color: rgb(66, 66, 66);
