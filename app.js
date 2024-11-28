@@ -148,6 +148,6 @@ purchaseButton.addEventListener("click", () => {
 const sendButton = document.querySelector(".send-button");
 sendButton.addEventListener("click", (event) => {
   event.preventDefault();
-  alert("Thank you for getting in touch! We will look over your message and get back to you by tomorrow.")
+  alert("Thank you for getting in touch! We will look over your message and get back to you as soon as we can.")
 })
 
