@@ -642,7 +642,7 @@ nav a:hover {
     color: #00c604;
 }
 
-.map{
+.map iframe{
     height: 100%;
     width: 100%;
 }
@@ -721,5 +721,26 @@ footer .col {
     .icons span {
         top: 30%;
         right: 30px;
+    }
+}
+
+@media (max-width: 964px){
+    .contact-container{
+        margin: 0 auto;
+        width: 90%;
+
+    }
+}
+
+@media (max-width: 700px){
+    .contact-container{
+        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .map iframe{
+        display: none;
     }
 }
