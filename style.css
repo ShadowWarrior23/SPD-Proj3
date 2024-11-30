@@ -188,7 +188,7 @@ nav a:hover {
     color: #d3ad7f;
 }
 
-.cart-box{
+.cart-box {
     display: grid;
     grid-template-columns: 32% 50% 18%;
     align-items: center;
@@ -196,42 +196,42 @@ nav a:hover {
     margin-top: 1rem;
     color: #fff;
     border: 2px solid #d3ad7f;
-  }
-  
-  .cart-img{
+}
+
+.cart-img {
     width: 100px;
     height: 100px;
     object-fit: contain;
-  }
-  
-  .detail-box{
+}
+
+.detail-box {
     display: grid;
     row-gap: .5rem;
-  }
-  
-  .cart-product-title{
+}
+
+.cart-product-title {
     font-size: 1rem;
     text-transform: uppercase;
-  }
-  
-  .cart-price{
+}
+
+.cart-price {
     font-weight: 500;
-  }
-  
-  .cart-quantity{
+}
+
+.cart-quantity {
     border: 1px solid #171427;
     outline-color: #0f0f1a;
     width: 4rem;
     text-align: center;
     font-size: 1rem;
-  }
-  
-  .cart-remove{
+}
+
+.cart-remove {
     font-size: 24px;
     color: #fff;
     cursor: pointer;
     right: 12px;
-  }
+}
 
 .total {
     display: flex;
@@ -522,12 +522,12 @@ nav a:hover {
     color: #00c604;
 }
 
-.full-menu{
+.full-menu {
     display: flex;
     justify-content: center;
 }
 
-.full-menu a{
+.full-menu a {
     text-decoration: none;
     padding: 10px 10px;
     font-size: 20px;
@@ -542,19 +542,63 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.full-menu a:hover{
+.full-menu a:hover {
     background-color: transparent;
     color: #00c604;
 }
 
-.contact{
+#blog {
+    padding-bottom: 2rem;
+}
+
+#blog h2 {
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+#blog h2 span,
+h6 {
+    color: #d3ad7f;
+}
+
+#blog h3 {
+    color: #fff;
+}
+
+#blog p {
+    color: #fff;
+}
+
+#blog a {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: .3rem;
+    background-color: #d3ad7f;
+    width: 40%;
+    text-decoration: none;
+    color: white;
+}
+
+.blogCard {
+    border: 2px solid #d3ad7f;
+    padding: .15rem;
+}
+
+.blogCard span {
+    all: unset;
+    color: #d3ad7f;
+}
+
+.contact {
     padding: 6rem 7%;
     height: 70vh;
     max-width: 100%;
     background-color: #0f0b0b;
 }
 
-.contact-container{
+.contact-container {
     max-width: 960px;
     margin: 0 auto;
     width: 100%;
@@ -567,11 +611,11 @@ nav a:hover {
     overflow: hidden;
 }
 
-.form-container{
+.form-container {
     padding: 20px;
 }
 
-.form-container span{
+.form-container span {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -579,7 +623,7 @@ nav a:hover {
     text-align: center;
 }
 
-.form-container h4{
+.form-container h4 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -589,16 +633,17 @@ nav a:hover {
 
 
 
-.contact-form{
+.contact-form {
     display: grid;
     row-gap: 1rem;
 }
 
-.registration-inputs{
+.registration-inputs {
     display: grid;
     row-gap: 1rem;
 }
-.registration-inputs input{
+
+.registration-inputs input {
     width: 100%;
     border: none;
     outline: none;
@@ -609,12 +654,12 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.registration-inputs input::-webkit-inner-spin-button{
+.registration-inputs input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.contact-form textarea{
+.contact-form textarea {
     border: none;
     outline: none;
     background-color: #373b5c;
@@ -626,7 +671,7 @@ nav a:hover {
 }
 
 
-.send-button{
+.send-button {
     width: 100%;
     border: none;
     outline: none;
@@ -637,12 +682,12 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.send-button:hover{
+.send-button:hover {
     background-color: transparent;
     color: #00c604;
 }
 
-.map{
+.map {
     height: 100%;
     width: 100%;
 }
@@ -721,5 +766,17 @@ footer .col {
     .icons span {
         top: 30%;
         right: 30px;
+    }
+
+    #blog .row {
+        row-gap: 1rem;
+    }
+
+    .form-container {
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        padding-top: 2rem;
     }
 }
