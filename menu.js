@@ -1,3 +1,15 @@
+const cartIcon = document.querySelector("#cart-icon");
+const shoppingCart = document.querySelector(".shopping-cart");
+const closeCart = document.querySelector("#cart-close");
+
+cartIcon.addEventListener("click", (event) => {
+    event.preventDefault();
+    shoppingCart.classList.add("active")
+  });
+  closeCart.addEventListener("click", () => shoppingCart.classList.remove("active"));
+
+
+
 const bigCardsDivs = document.querySelectorAll(".big-cards");
 const bigCardsDiv1 = document.querySelector(".big-cards1");
 const bigCardsDiv2 = document.querySelector(".big-cards2");
@@ -47,13 +59,6 @@ for (let i = 1; i <= 28; i++) {
         card.appendChild(overlay)
     })
 }
-
-const cart0 = document.querySelector('#cartOpen0');
-const cart = document.querySelector('#cartOpen');
-cart0.addEventListener('click', event => {
-    cart.classList.toggle('bi-cart-fill');
-    cart.classList.toggle('bi-cart4');
-})
 
 const details = document.querySelectorAll(".details");
 const bigCards = document.querySelectorAll(".big-card");
