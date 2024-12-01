@@ -14,9 +14,13 @@ filter0.addEventListener('click', event => {
 
 //Kosár:
 
-const cart0 = document.querySelector('#cartOpen0');
-const cart = document.querySelector('#cartOpen');
-cart0.addEventListener('click', event => {
-    cart.classList.toggle('bi-cart-fill');
-    cart.classList.toggle('bi-cart4');
-})
+const cartIcon = document.querySelector("#cart-icon");
+const cart = document.querySelector(".shopping-cart");
+const closeCart = document.querySelector("#cart-close");
+
+cartIcon.addEventListener("click", (event) => {
+  event.preventDefault();
+  cart.classList.add("active")
+});
+closeCart.addEventListener("click", () => cart.classList.remove("active"));
+
