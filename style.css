@@ -473,7 +473,7 @@ nav a:hover {
     border: 2px solid #00c604;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .card:hover {
@@ -547,11 +547,17 @@ nav a:hover {
     color: #00c604;
 }
 
-#blog {
+#blog,
+#review {
     padding-bottom: 2rem;
 }
 
-#blog h2 {
+#blog img {
+    border-radius: 16px 16px 0 0;
+}
+
+#blog h2,
+#review h2 {
     text-align: center;
     padding: 2rem 0;
     color: #fff;
@@ -586,9 +592,56 @@ h6 {
     padding: .15rem;
 }
 
-.blogCard span {
+.blogCard span,
+#review span {
     all: unset;
     color: #d3ad7f;
+}
+
+#review {
+    background-color: #151b20;
+}
+
+.revCard {
+    padding: .3rem;
+    border: 2px solid #ff8c00;
+}
+
+.infoR {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .3rem;
+}
+
+.infoR img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#review .bi {
+    color: #d3ad7f;
+}
+
+#review p {
+    color: #fff;
+}
+
+#more {
+    display: flex;
+    justify-content: center;
+}
+
+#moreRev {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #ff8c00;
+    width: 10vw;
+    text-align: center;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .contact {
@@ -630,8 +683,6 @@ h6 {
     color: #fff;
     text-align: center;
 }
-
-
 
 .contact-form {
     display: grid;
@@ -769,6 +820,10 @@ footer .col {
     }
 
     #blog .row {
+        row-gap: 1rem;
+    }
+
+    #review .row {
         row-gap: 1rem;
     }
 
