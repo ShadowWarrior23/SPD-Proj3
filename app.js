@@ -125,7 +125,7 @@ function updateCart() {
     .join("");
 
   const total = itemsAdded.reduce((sum, item) => {
-    const itemPrice = parseFloat(item.price.replace("$", ""));
+    const itemPrice = parseFloat(item.price.replace("", ""));
     return sum + itemPrice * item.quantity;
   }, 0);
 
