@@ -21,6 +21,7 @@ html {
 html::-webkit-scrollbar {
     width: .5rem;
     height: .2rem;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar-track {
@@ -86,6 +87,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background-color: var(--bg);
+    overflow-x: hidden;
 }
 
 img {
@@ -407,7 +409,7 @@ main h3 {
 
 
 footer {
-    background-color: rgb(66, 66, 66);
+    background-color:  rgb(0, 0, 0);
     padding: 1rem;
 }
 
