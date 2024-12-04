@@ -154,7 +154,3 @@ sendButton.addEventListener("click", (event) => {
   document.querySelector('textarea').textContent = '';
 })
 
-/* function searchFood(){
-  const sTerm = String(document.querySelector('#searchB').value).toLowerCase();
-  const filtFood = sth;
-} */
