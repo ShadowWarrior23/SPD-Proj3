@@ -8,8 +8,11 @@
 
 :root {
     --black: #13131a;
+    --circle-border: rgb(166, 182, 25);
     --border: .1rem solid rgba(255, 255, 255, 0.2);
     --bg: #010103;
+    --cream: #d3ad7f;
+    --font-color: #fff;
 }
 
 html {
@@ -64,7 +67,7 @@ html::-webkit-scrollbar-thumb {
     height: 200px;
     border-radius: 50%;
     border: 5px solid white;
-    border-block-start-color: rgb(166, 182, 25);
+    border-block-start-color: var(--circle-border);
     margin-block-end: 45px;
     animation: rotate360 1s linear infinite;
 
@@ -89,6 +92,8 @@ body {
     background-color: var(--bg);
     min-height: 100vh;
 }
+
+
 
 img {
     height: 100%;
@@ -130,8 +135,18 @@ nav a {
 }
 
 nav a:hover {
-    color: #d3ad7f;
-    border-bottom: 1px solid #d3ad7f;
+    color: var(--cream);
+    border-bottom: 1px solid var(--cream);
+}
+
+#theme-toggler{
+    position: fixed;
+    top: 15px;
+    right: 80px;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .icons a {
@@ -302,7 +317,7 @@ nav a:hover {
 
 .home-text-content h1 {
     font-size: 35px;
-    color: #d3ad7f;
+    color: var(--cream);
 }
 
 .home-text-content p {
@@ -335,7 +350,7 @@ nav a:hover {
 }
 
 .about h2 {
-    color: #fff;
+    color: var(--font-color);
     font-size: 40px;
     text-align: center;
     line-height: 1;
@@ -345,7 +360,7 @@ nav a:hover {
 
 
 .about span {
-    color: #d3ad7f;
+    color: var(--cream);
     font-size: 40px;
     text-align: center;
     line-height: 1;
@@ -376,7 +391,7 @@ nav a:hover {
 
 
 .about-text-content p {
-    color: #fff;
+    color: var(--font-color);
     font-size: 1.5rem;
     line-height: 2rem;
     font-family: 'Roboto';
@@ -388,7 +403,7 @@ nav a:hover {
 }
 
 .popular-menu h2 {
-    color: #fff;
+    color: var(--font-color);
     font-size: 40px;
     text-align: center;
     line-height: 1;
@@ -397,7 +412,7 @@ nav a:hover {
 }
 
 .popular-menu span {
-    color: #d3ad7f;
+    color: var(--cream);
     font-size: 40px;
     text-align: center;
     line-height: 1;
@@ -423,7 +438,7 @@ nav a:hover {
 }
 
 .slide-container h2 {
-    color: #d3ad7f;
+    color: var(--cream);
     font-size: 40px;
     text-align: center;
     line-height: 1;

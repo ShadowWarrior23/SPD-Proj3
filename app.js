@@ -11,6 +11,19 @@ menuButton.addEventListener("click", () => {
   navbar.classList.toggle("active");
 })
 
+const themeToggler = document.querySelector("#theme-toggler");
+
+themeToggler.addEventListener("click", () => {
+  themeToggler.classList.toggle('fa-moon');
+
+  if(themeToggler.classList.contains('fa-sun')){
+    document.body.classList.add("change");
+  } else{
+    document.body.classList.remove("change");
+  }
+})
+
+
 const sr = ScrollReveal({
   distance: '45px',
   duration: 2700,
