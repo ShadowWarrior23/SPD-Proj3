@@ -1,6 +1,6 @@
-const texts = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus aspernatur quisquam expedita nostrum dolore voluptates voluptatibus laudantium quibusdam dignissimos. Blanditiis laboriosam explicabo exercitationem eos, animi dolor suscipit facilis quam temporibus. Sint, consequuntur.Eligendi libero ducimus debitis numquam earum maiores rerum ? Quam explicabo saepe animi porro perferendis possimus nesciunt nam obcaecati doloribus eaque! Voluptas numquam tenetur blanditiis sint cum ad similique. Repellat sapiente necessitatibus adipisci illo voluptatem vitae amet, veniam ipsa neque, qui totam ratione cumque aut impedit nostrum quidem delectus unde maxime magni tempore earum corporis voluptas harum officiis.Itaque! Minus asperiores harum veniam ad natus reprehenderit quibusdam, molestiae, veritatis voluptates quod, pariatur quidem ipsam earum provident quo numquam eligendi ullam laborum accusantium optio molestias.Ab aspernatur iure obcaecati nisi ? Corrupti cumque praesentium aperiam ?"];
+const texts = ["French toast \n a dish of sliced bread soaked in beaten eggs and often milk or cream, then pan-fried. \n Ingredients: \n - 2 slices of bread \n - 1 egg \n - 1/2 cup milk \n optional: -Sugar, -cinnamon, nutmeg, and vanilla"];
 
 const ps = document.querySelectorAll(".big-cards p");
-for (let i = 0; i < ps.length; i++) {
+for (let i = 0; i < texts.length; i++) {
     ps[i].innerText = texts[i]
 }
