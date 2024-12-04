@@ -131,10 +131,6 @@ for (let i = 1; i <= 28; i++) {
     btn.innerText = "x";
     box.appendChild(btn);
     div.appendChild(box);
-    const a = document.createElement("a");
-    a.href = "#";
-    a.innerHTML = `<i class="bi bi-cart4 addCart"></i>`;
-    div.appendChild(a);
     if (i <= 4) {
         bigCardsDiv1.appendChild(div);
     }

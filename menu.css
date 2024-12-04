@@ -97,6 +97,9 @@ img {
 header {
     height: 10vh;
     background-color: var(--black);
+}
+
+.header-content {
     display: flex;
     padding: 1rem 1%;
     border-bottom: var(--border);
@@ -109,7 +112,7 @@ header {
     z-index: 4;
 }
 
-header h3 {
+.header-content h3 {
     text-align: center;
     background: linear-gradient(to right, #ff4500, #ff8c00, #ffd700);
     font-family: 'Lobster';
@@ -137,7 +140,6 @@ nav a:hover {
     height: 5vh;
     width: 100%;
     display: flex;
-    padding: .5rem 0;
 }
 
 #searchB {
@@ -489,7 +491,7 @@ footer .col {
         display: inline-block;
     }
 
-    header nav {
+    .header-content nav {
         position: absolute;
         top: 100%;
         right: -100%;
@@ -498,18 +500,18 @@ footer .col {
         height: calc(100vh-9.5rem);
     }
 
-    header nav.slide {
+    .header-content nav.slide {
         right: 0;
     }
 
-    header nav a {
+    .header-content nav a {
         display: block;
         margin: 1.5rem;
         padding: .5rem;
         font-size: 2rem;
     }
 
-    header nav a:hover {
+    .header-content nav a:hover {
         color: #d3ad7f;
         border-bottom: 1px solid #d3ad7f;
     }
