@@ -779,6 +779,11 @@ footer p {
     color: var(--font-color);
 }
 
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
 footer .col {
     display: flex;
     flex-direction: column;
