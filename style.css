@@ -411,6 +411,10 @@ nav a:hover {
     height: auto;
 }
 
+.swiper-slide img {
+    border-radius: 15px 15px 0 0;
+}
+
 .slide-container {
     width: 100%;
     max-width: 100%;
