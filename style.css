@@ -635,33 +635,6 @@ h6 {
     color: #fff;
 }
 
-#more {
-    display: flex;
-    justify-content: center;
-}
-
-#moreRev {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 1rem;
-    background-color: #ff8c00;
-    width: 10vw;
-    text-align: center;
-    letter-spacing: 1.5px;
-    border-radius: 10px;
-    margin-top: 1rem;
-    transition: .2s;
-}
-
-#moreRev:hover {
-    border: 2px solid #ff8c00;
-    padding: 14px;
-    background-color: transparent;
-    color: #ff8c00;
-    transition: .2s;
-}
-
 .contact {
     padding: 6rem 7%;
     max-width: 100%;
@@ -869,6 +842,10 @@ footer .col {
     .map iframe {
         display: none;
     }
+
+    #hImg {
+        width: 75%;
+    }
 }
 
 @media (min-width: 750px) and (max-width: 992px) {
@@ -881,5 +858,16 @@ footer .col {
         font-size: 1rem;
         line-height: 1.5;
         padding: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    #about-image {
+        width: 50%;
+    }
+
+    .about-iner-content {
+        display: flex;
+        justify-content: center;
     }
 }
