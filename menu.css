@@ -379,9 +379,16 @@ main h3 {
     background-color: #0c0e26;
 }
 
+.big-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .big-card button {
+    height: 0;
     color: #fff;
-    margin: -15px 5px;
+    margin: -2% -7% 0 0;
     float: right;
     font-size: 30px;
     border: none;
@@ -394,13 +401,13 @@ main h3 {
 }
 
 .big-card img {
-    height: 30vh;
-    width: 30vh;
-    float: left;
-    margin-right: 10px;
+    margin: 0 0 0 -7%;
+    height: 30%;   
+    width: 30%;
 }
 
 .big-card p {
+    width: 50%;
     letter-spacing: 1px;
     line-height: 2rem;
     color: #fff;
@@ -413,7 +420,7 @@ main h3 {
     text-decoration: none;
     color: #000;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 10px;
 }
 
 .big-card a:active {
