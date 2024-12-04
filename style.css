@@ -24,6 +24,8 @@
     --home-text-content-a: orange;
     --about-bg: #000000;
     --popular-menu-bg: #151b20;
+    --swiper-button-bg: rgba(0, 0, 0, 0.5);
+    --card-bg: #151b20;
 }
 
 html {
@@ -410,7 +412,7 @@ nav a:hover {
 
 
 .popular-menu {
-    background-color: #151b20;
+    background-color: var(--popular-menu-bg);
 }
 
 .popular-menu h2 {
@@ -471,7 +473,7 @@ nav a:hover {
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--swiper-button-bg);
     font-size: 24px;
     display: flex;
     justify-content: center;
