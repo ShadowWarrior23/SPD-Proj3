@@ -119,19 +119,18 @@ const bigCardsDiv6 = document.querySelector(".big-cards6");
 for (let i = 1; i <= 28; i++) {
     const div = document.createElement("div");
     div.classList.add("big-card", `big-card${i}`, "hidden");
-    const btn = document.createElement("button");
-    btn.innerText = "x";
-    div.appendChild(btn);
+    const box =  document.createElement("div");
+    box.classList.add("big-card-content");
     const img = document.createElement("img");
     img.src = `img/img${i}.png`;
-    div.appendChild(img);
+    box.appendChild(img);
     const p = document.createElement("p");
     p.id = `p${i}`;
-    div.appendChild(p);
-    const a = document.createElement("a");
-    a.href = "#";
-    a.innerHTML = `<i class="bi bi-cart4 addCart"></i>`;
-    div.appendChild(a);
+    box.appendChild(p);
+    const btn = document.createElement("button");
+    btn.innerText = "x";
+    box.appendChild(btn);
+    div.appendChild(box);
     if (i <= 4) {
         bigCardsDiv1.appendChild(div);
     }

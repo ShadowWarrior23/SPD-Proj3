@@ -25,45 +25,43 @@
     </div>
 
     <header>
-        <h3>Fiery Fork <i class="fa-solid fa-utensils"></i></h3>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html">About</a>
-            <a href="#">Menu</a>
-            <a href="#contact">Contact</a>
-            <a href="index.html">Review</a>
-            <a href="index.html">Blog</a>
-        </nav>
-        <div class="icons">
-            <a href="#" id="mGlass"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <div class="hidden2">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+        <div class="header-content">
+            <h3>Fiery Fork <i class="fa-solid fa-utensils"></i></h3>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html">About</a>
+                <a href="#">Menu</a>
+                <a href="#contact">Contact</a>
+                <a href="index.html">Review</a>
+                <a href="index.html">Blog</a>
+            </nav>
+            <div class="icons">
+                <a href="#" id="cart-icon"><i class="bi bi-cart4"></i></a>
+                <span id="quantity">0</span>
+                <a href="#" id="menu-button"><i class="fa-solid fa-bars"></i></a>
             </div>
-            <a href="#" id="cart-icon"><i class="bi bi-cart4"></i></a>
-            <span id="quantity">0</span>
-            <a href="#" id="menu-button"><i class="fa-solid fa-bars"></i></a>
+            <div class="shopping-cart">
+                <h2 class="cart-title">Your Cart</h2>
+    
+                <div class="cart-content">
+    
+                </div>
+    
+                <div class="total">
+                    <div class="total-title">Overall:</div>
+                    <div class="total-price">£0</div>
+                </div>
+    
+                <button type="button" class="btn-buy" id="btn-buy">Purchase</button>
+    
+                <i class="fa-solid fa-times" id="cart-close"></i>
+            </div>
         </div>
-        <div class="shopping-cart">
-            <h2 class="cart-title">Your Cart</h2>
-
-            <div class="cart-content">
-
-            </div>
-
-            <div class="total">
-                <div class="total-title">Overall:</div>
-                <div class="total-price">£0</div>
-            </div>
-
-            <button type="button" class="btn-buy" id="btn-buy">Purchase</button>
-
-            <i class="fa-solid fa-times" id="cart-close"></i>
+        <div class="sBar">
+            <input type="text" id="searchB" placeholder="Search here...">
         </div>
     </header>
-    <hr class="hidden" id="menuline">
+
     <main>
         <div class="container">
             <div class="big-cards big-cards1" id="bigC1">
@@ -105,7 +103,7 @@
                 </div>
                 <div class="col col-12 col-md-6 col-lg-4 col-xxl-3">
                     <div class="card cardCust">
-                        <img src="img/img4.png" alt=Fried mushrooms title=Fried mushrooms>
+                        <img src="img/img4.png" alt="Fried mushrooms" title="Fried mushrooms">
                         <h3>Fried mushrooms</h3>
                         <span>£6.75</span>
                         <div class="btns">
