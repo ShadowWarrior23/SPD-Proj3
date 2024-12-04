@@ -156,5 +156,5 @@ sendButton.addEventListener("click", (event) => {
 
 function searchFood(){
   const sTerm = String(document.querySelector('#searchB').value).toLowerCase();
-  const filtFood = 
+  const filtFood = sth;
 }
