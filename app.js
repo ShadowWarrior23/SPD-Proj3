@@ -125,11 +125,11 @@ function updateCart() {
     .join("");
 
   const total = itemsAdded.reduce((sum, item) => {
-    const itemPrice = parseFloat(item.price.replace("", ""));
+    const itemPrice = parseFloat(item.price.replace("£", ""));
     return sum + itemPrice * item.quantity;
   }, 0);
 
-  totalPriceElement.textContent = `$${total.toFixed(2)}`;
+  totalPriceElement.textContent = `£${total.toFixed(2)}`;
   cartCountElement.textContent = itemsAdded.reduce((count, item) => count + item.quantity, 0);
 }
 
