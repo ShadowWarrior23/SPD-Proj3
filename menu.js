@@ -175,4 +175,9 @@ for (let i = 0; i <= 27; i++) {
         overlays[i].classList.toggle("hidden");
         document.body.style.overflow = '';
     })
+    overlays[i].addEventListener("click", () => {
+        bigCards[i].classList.toggle("hidden");
+        overlays[i].classList.toggle("hidden");
+        document.body.style.overflow = '';
+    })
 }
