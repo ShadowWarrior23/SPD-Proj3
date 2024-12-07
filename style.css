@@ -38,6 +38,7 @@
     --contact-form: #373b5c;
     --footer-bg: rgb(0, 0, 0);
     --footer-h3-color: rgb(255, 94, 0);
+    --footer-p-a: #ffffff;
     --slogen: rgb(255, 118, 39);
 }
 
@@ -144,10 +145,11 @@ body.change {
     --revCard-bg: #0073ff;
     --contact-bg: #f0f4f4;
     --contact-container: #e2e1db;
-    --registration-inputs-bg: #2c2f48;
+    --registration-inputs-bg: #48442c;
     --contact-form: #d3d0b7;
     --footer-bg: white;
     --footer-h3-color: rgb(0, 161, 255);
+    --footer-p-a: #000000;
     --slogen: rgb(0, 137, 216);
 }
 
@@ -823,7 +825,7 @@ footer p {
 }
 
 footer p a {
-    color: #fff;
+    color: var(--footer-p-a);
     text-decoration: none;
 }
 
