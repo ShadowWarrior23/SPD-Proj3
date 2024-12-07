@@ -7,7 +7,8 @@
 }
 
 :root {
-    /* DM */
+    --lBlue: #005aff;
+    /*      DM      */
     --primary-color: #13131a;
     --circle-border: rgb(166, 182, 25);
     --border: .1rem solid rgba(255, 255, 255, 0.2);
@@ -22,24 +23,53 @@
     --cart-quantity-outline: #0f0f1a;
     --btn-buy: #ffc107;
     --home-bg: linear-gradient(rgba(14, 15, 17, 0.9), rgba(9, 9, 10, 0.9)), url("./pics/home.png");
-    --home-text-content-a: orange;
-    --about-bg: #000000;
-    --popular-menu-bg: #151b20;
-    --swiper-button-bg: rgba(0, 0, 0, 0.5);
-    --card-bg: #151b20;
-    --card-main-btn-full-menu-send-button: #00c604;
-    --blog-bg: #201f24;
-    --review-bg: #151b20;
-    --revCard-bg: #ff8c00;
-    --contact-bg: #0f0b0b;
-    --contact-container: #1d1e24;
-    --registration-inputs-bg: #2c2f48;
-    --contact-form: #373b5c;
-    --footer-bg: rgb(0, 0, 0);
-    --footer-h3-color: rgb(255, 94, 0);
-    --slogen: rgb(255, 118, 39);
-    /* LM */
-    
+    --lm-home-text-content-a: orange;
+    --lm-about-bg: #000000;
+    --lm-popular-menu-bg: #151b20;
+    --lm-swiper-button-bg: rgba(0, 0, 0, 0.5);
+    --lm-card-bg: #151b20;
+    --lm-card-main-btn-full-menu-send-button: #00c604;
+    --lm-blog-bg: #201f24;
+    --lm-review-bg: #151b20;
+    --lm-revCard-bg: #ff8c00;
+    --lm-contact-bg: #0f0b0b;
+    --lm-contact-container: #1d1e24;
+    --lm-registration-inputs-bg: #2c2f48;
+    --lm-contact-form: #373b5c;
+    --lm-footer-bg: rgb(0, 0, 0);
+    --lm-footer-h3-color: rgb(255, 94, 0);
+    --lm-slogen: rgb(255, 118, 39);
+    /*      LM      */
+    --lm-primary-color: #ecece5;
+    --lm-circle-border: rgb(89, 73, 230);
+    --lm-border: .1rem solid rgba(0, 0, 0, 0.2);
+    --lm-bg: #fefefc;
+    --lm-cream: #2d5280;
+    --lm-font-color: #000;
+    --lm-Logo-text-color: linear-gradient(to right, #00baff, #0073ff, #0028ff);
+    --lm-cart-counter: cyan;
+    --lm-shopping-cart-bg: rgba(255, 255, 255, .9);
+    --lm-shopping-cart-border: rgba(172, 177, 177, 0.5);
+    --lm-cart-quantity-border: #e8ebd8;
+    --lm-cart-quantity-outline: #f0f0e5;
+    --lm-btn-buy: #003ef8;
+    --lm-home-bg: linear-gradient(rgba(241, 140, 138, 0.9), rgba(246, 246, 245, 0.9)), url("./pics/home.png");
+    --lm-home-text-content-a: #005aff;
+    --lm-about-bg: #ffffff;
+    --lm-popular-menu-bg: #eae4df;
+    --lm-swiper-button-bg: rgba(255, 255, 255, 0.5);
+    --lm-card-bg: #eae4df;
+    --lm-card-main-btn-full-menu-send-button: #ff39fb;
+    --lm-blog-bg: #dfe0db;
+    --lm-review-bg: #eae4df;
+    --lm-revCard-bg: #0073ff;
+    --lm-contact-bg: #f0f4f4;
+    --lm-contact-container: #e2e1db;
+    --lm-registration-inputs-bg: #2c2f48;
+    --lm-contact-form: #d3d0b7;
+    --lm-footer-bg: white;
+    --lm-footer-h3-color: rgb(0, 161, 255);
+    --lm-slogen: rgb(0, 137, 216);
 }
 
 html {
@@ -120,9 +150,7 @@ body {
     min-height: 100vh;
 }
 
-body.change{
-    
-}
+/* body .change {} */
 
 img {
     height: 100%;
@@ -168,7 +196,7 @@ nav a:hover {
     border-bottom: 1px solid var(--cream);
 }
 
-#theme-toggler{
+#theme-toggler {
     position: fixed;
     top: 15px;
     right: 80px;
@@ -595,8 +623,7 @@ nav a:hover {
     color: var(--card-main-btn-full-menu-send-button);
 }
 
-#blog
-{
+#blog {
     padding-bottom: 2rem;
     background-color: var(--blog-bg);
 }
