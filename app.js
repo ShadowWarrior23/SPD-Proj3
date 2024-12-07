@@ -16,7 +16,7 @@ const themeToggler = document.querySelector("#theme-toggler");
 themeToggler.addEventListener("click", () => {
   themeToggler.classList.toggle('fa-moon');
 
-  if(themeToggler.classList.contains('fa-sun')){
+  if(themeToggler.classList.contains('fa-moon')){
     document.body.classList.add("change");
   } else{
     document.body.classList.remove("change");
