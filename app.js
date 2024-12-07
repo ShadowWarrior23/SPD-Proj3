@@ -159,7 +159,6 @@ purchaseButton.addEventListener("click", () => {
   updateCart()
 })
 
-
 const sendButton = document.querySelector(".send-button");
 sendButton.addEventListener("click", (event) => {
   event.preventDefault();

@@ -39,37 +39,6 @@
     --footer-bg: rgb(0, 0, 0);
     --footer-h3-color: rgb(255, 94, 0);
     --slogen: rgb(255, 118, 39);
-    /*      LM      */
-    --lm-primary-color: #ecece5;
-    --lm-circle-border: rgb(89, 73, 230);
-    --lm-border: .1rem solid rgba(0, 0, 0, 0.2);
-    --lm-bg: #fefefc;
-    --lm-cream: #2d5280;
-    --lm-font-color: #000;
-    --lm-Logo-text-color: linear-gradient(to right, #00baff, #0073ff, #0028ff);
-    --lm-cart-counter: cyan;
-    --lm-shopping-cart-bg: rgba(255, 255, 255, .9);
-    --lm-shopping-cart-border: rgba(172, 177, 177, 0.5);
-    --lm-cart-quantity-border: #e8ebd8;
-    --lm-cart-quantity-outline: #f0f0e5;
-    --lm-btn-buy: #003ef8;
-    --lm-home-bg: linear-gradient(rgba(241, 140, 138, 0.9), rgba(246, 246, 245, 0.9)), url("./pics/home.png");
-    --lm-home-text-content-a: #005aff;
-    --lm-about-bg: #ffffff;
-    --lm-popular-menu-bg: #eae4df;
-    --lm-swiper-button-bg: rgba(255, 255, 255, 0.5);
-    --lm-card-bg: #eae4df;
-    --lm-card-main-btn-full-menu-send-button: #ff39fb;
-    --lm-blog-bg: #dfe0db;
-    --lm-review-bg: #eae4df;
-    --lm-revCard-bg: #0073ff;
-    --lm-contact-bg: #f0f4f4;
-    --lm-contact-container: #e2e1db;
-    --lm-registration-inputs-bg: #2c2f48;
-    --lm-contact-form: #d3d0b7;
-    --lm-footer-bg: white;
-    --lm-footer-h3-color: rgb(0, 161, 255);
-    --lm-slogen: rgb(0, 137, 216);
 }
 
 html {
@@ -150,7 +119,37 @@ body {
     min-height: 100vh;
 }
 
-/* body .change {} */
+body.change {
+    --primary-color: #ecece5;
+    --circle-border: rgb(89, 73, 230);
+    --border: .1rem solid rgba(0, 0, 0, 0.2);
+    --bg: #fefefc;
+    --cream: #2d5280;
+    --font-color: #000;
+    --Logo-text-color: linear-gradient(to right, #00baff, #0073ff, #0028ff);
+    --cart-counter: cyan;
+    --shopping-cart-bg: rgba(255, 255, 255, .9);
+    --shopping-cart-border: rgba(172, 177, 177, 0.5);
+    --cart-quantity-border: #e8ebd8;
+    --cart-quantity-outline: #f0f0e5;
+    --btn-buy: #003ef8;
+    --home-bg: linear-gradient(rgba(241, 140, 138, 0.9), rgba(246, 246, 245, 0.9)), url("./pics/home.png");
+    --home-text-content-a: #005aff;
+    --about-bg: #ffffff;
+    --popular-menu-bg: #eae4df;
+    --swiper-button-bg: rgba(255, 255, 255, 0.5);
+    --card-bg: #eae4df;
+    --blog-bg: #dfe0db;
+    --review-bg: #eae4df;
+    --revCard-bg: #0073ff;
+    --contact-bg: #f0f4f4;
+    --contact-container: #e2e1db;
+    --registration-inputs-bg: #2c2f48;
+    --contact-form: #d3d0b7;
+    --footer-bg: white;
+    --footer-h3-color: rgb(0, 161, 255);
+    --slogen: rgb(0, 137, 216);
+}
 
 img {
     height: 100%;
