@@ -1,8 +1,8 @@
 const preloader = document.querySelector("#preloader");
 
 window.addEventListener("load", () => {
-  preloader.classList.add("loaded");
-  document.body.classList.add("loaded");
+    preloader.classList.add("loaded");
+    document.body.classList.add("loaded");
 })
 
 
@@ -120,7 +120,7 @@ const bigCardsDiv7 = document.querySelector(".big-cards7");
 for (let i = 1; i <= 36; i++) {
     const div = document.createElement("div");
     div.classList.add("big-card", `big-card${i}`, "hidden");
-    const box =  document.createElement("div");
+    const box = document.createElement("div");
     box.classList.add("big-card-content");
     const img = document.createElement("img");
     img.src = `img/img${i}.png`;
@@ -149,7 +149,7 @@ for (let i = 1; i <= 36; i++) {
     }
     else if (i <= 28) {
         bigCardsDiv6.appendChild(div);
-    } 
+    }
     else {
         bigCardsDiv7.appendChild(div);
     }
@@ -183,4 +183,23 @@ for (let i = 0; i <= 35; i++) {
         overlays[i].classList.toggle("hidden");
         document.body.style.overflow = '';
     })
+}
+
+const searchB = document.querySelector('#searchB');
+searchB.addEventListener('input', searchDish)
+
+function searchDish() {
+    const searchTerm = searchB.value.toLowerCase();
+    const cards = document.querySelectorAll('.cardCust');
+
+    cards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        if (title.includes(searchTerm)) {
+            card.style.display = '';
+        } else if (searchTerm === '') {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
 }
