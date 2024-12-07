@@ -1,67 +1,67 @@
 const preloader = document.querySelector("#preloader");
 
 window.addEventListener("load", () => {
-  preloader.classList.add("loaded");
-  document.body.classList.add("loaded");
+    preloader.classList.add("loaded");
+    document.body.classList.add("loaded");
 })
 
 const navbar = document.querySelector("nav");
 const menuButton = document.querySelector("#menu-button")
 menuButton.addEventListener("click", () => {
-  navbar.classList.toggle("active");
+    navbar.classList.toggle("active");
 })
 
 const themeToggler = document.querySelector("#theme-toggler");
 
 themeToggler.addEventListener("click", () => {
-  themeToggler.classList.toggle('fa-moon');
+    themeToggler.classList.toggle('fa-moon');
 
-  if(themeToggler.classList.contains('fa-moon')){
-    document.body.classList.add("change");
-  } else{
-    document.body.classList.remove("change");
-  }
+    if (themeToggler.classList.contains('fa-moon')) {
+        document.body.classList.add("change");
+    } else {
+        document.body.classList.remove("change");
+    }
 })
 
 
 const sr = ScrollReveal({
-  distance: '45px',
-  duration: 2700,
-  reset: true,
+    distance: '45px',
+    duration: 2700,
+    reset: true,
 })
 
 sr.reveal('.home-image', { delay: 300, origin: 'left' })
 sr.reveal('.about-text-content', { delay: 300, origin: 'right' })
 sr.reveal('#about-image', { delay: 300, origin: 'left' })
 sr.reveal('.slide-container', { delay: 300, origin: 'left' })
-sr.reveal('#review .row', {delay: 300, origin: 'right'})
-sr.reveal('#blog .row', {delay: 300, origin: 'left'})
+sr.reveal('#review .row', { delay: 300, origin: 'right' })
+sr.reveal('#blog .row', { delay: 300, origin: 'left' })
 
 
 new Swiper(".slide-container", {
-  loop: true,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  spaceBetween: 20,
-  slidesPerView: 1,
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
+    loop: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-    768: {
-      slidesPerView: 2,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
-    1024: {
-      slidesPerView: 3,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
     },
-  },
 });
 
 const cartIcon = document.querySelector("#cart-icon");
@@ -73,57 +73,57 @@ const cartCountElement = document.querySelector("#quantity");
 let itemsAdded = [];
 
 cartIcon.addEventListener("click", (event) => {
-  event.preventDefault();
-  cart.classList.add("active")
+    event.preventDefault();
+    cart.classList.add("active")
 });
 closeCart.addEventListener("click", () => cart.classList.remove("active"));
 
 document.querySelectorAll(".add-cart").forEach(button =>
-  button.addEventListener("click", function () {
-    const product = this.closest(".card");
-    const title = product.querySelector("h4").textContent;
-    const price = product.querySelector("span").textContent;
-    const imgSrc = product.querySelector("img").src;
+    button.addEventListener("click", function () {
+        const product = this.closest(".card");
+        const title = product.querySelector("h4").textContent;
+        const price = product.querySelector("span").textContent;
+        const imgSrc = product.querySelector("img").src;
 
-    const existingItem = itemsAdded.find(item => item.title === title);
-    if (existingItem) {
-      existingItem.quantity += 1;
-    }
-    else {
-      itemsAdded.push({ title, price, imgSrc, quantity: 1 });
-    }
+        const existingItem = itemsAdded.find(item => item.title === title);
+        if (existingItem) {
+            existingItem.quantity += 1;
+        }
+        else {
+            itemsAdded.push({ title, price, imgSrc, quantity: 1 });
+        }
 
-    updateCart();
-  })
+        updateCart();
+    })
 );
 
 cartContent.addEventListener("click", function (e) {
-  if (e.target.classList.contains("cart-remove")) {
-    const title = e.target.closest(".cart-box").querySelector(".cart-product-title").textContent;
-    itemsAdded = itemsAdded.filter(item => item.title !== title);
-    updateCart();
-  }
+    if (e.target.classList.contains("cart-remove")) {
+        const title = e.target.closest(".cart-box").querySelector(".cart-product-title").textContent;
+        itemsAdded = itemsAdded.filter(item => item.title !== title);
+        updateCart();
+    }
 });
 
 
 cartContent.addEventListener("input", function (e) {
-  if (e.target.classList.contains("cart-quantity")) {
-    const cartBox = e.target.closest(".cart-box");
-    const title = cartBox.querySelector(".cart-product-title").textContent;
-    const newQuantity = parseInt(e.target.value);
+    if (e.target.classList.contains("cart-quantity")) {
+        const cartBox = e.target.closest(".cart-box");
+        const title = cartBox.querySelector(".cart-product-title").textContent;
+        const newQuantity = parseInt(e.target.value);
 
-    const item = itemsAdded.find(item => item.title === title);
-    if (item) {
-      item.quantity = newQuantity;
-      updateCart();
+        const item = itemsAdded.find(item => item.title === title);
+        if (item) {
+            item.quantity = newQuantity;
+            updateCart();
+        }
     }
-  }
 });
 
 function updateCart() {
-  cartContent.innerHTML = itemsAdded
-    .map(
-      item => `
+    cartContent.innerHTML = itemsAdded
+        .map(
+            item => `
         <div class="cart-box">
           <img src="${item.imgSrc}" alt="" class="cart-img">
           <div class="detail-box">
@@ -134,35 +134,35 @@ function updateCart() {
           <i class="fa-solid fa-trash cart-remove"></i>
         </div>
       `
-    )
-    .join("");
+        )
+        .join("");
 
-  const total = itemsAdded.reduce((sum, item) => {
-    const itemPrice = parseFloat(item.price.replace("£", ""));
-    return sum + itemPrice * item.quantity;
-  }, 0);
+    const total = itemsAdded.reduce((sum, item) => {
+        const itemPrice = parseFloat(item.price.replace("£", ""));
+        return sum + itemPrice * item.quantity;
+    }, 0);
 
-  totalPriceElement.textContent = `£${total.toFixed(2)}`;
-  cartCountElement.textContent = itemsAdded.reduce((count, item) => count + item.quantity, 0);
+    totalPriceElement.textContent = `£${total.toFixed(2)}`;
+    cartCountElement.textContent = itemsAdded.reduce((count, item) => count + item.quantity, 0);
 }
 
 const purchaseButton = document.querySelector("#btn-buy");
 purchaseButton.addEventListener("click", () => {
-  if (itemsAdded.length === 0) {
-    alert("Your cart is empty!");
-  }
-  else {
-    alert("Thank you for your purchase!")
-  };
+    if (itemsAdded.length === 0) {
+        alert("Your cart is empty!");
+    }
+    else {
+        alert("Thank you for your purchase!")
+    };
 
-  itemsAdded = [];
-  updateCart()
+    itemsAdded = [];
+    updateCart()
 })
 
 const sendButton = document.querySelector(".send-button");
 sendButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  alert("Thank you for getting in touch! We will look over your message and get back to you as soon as we can.")
-  document.querySelector('textarea').textContent = '';
+    event.preventDefault();
+    alert("Thank you for getting in touch! We will look over your message and get back to you as soon as we can.")
+    document.querySelector('textarea').textContent = '';
 })
 
