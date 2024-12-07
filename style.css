@@ -7,6 +7,7 @@
 }
 
 :root {
+    /* DM */
     --primary-color: #13131a;
     --circle-border: rgb(166, 182, 25);
     --border: .1rem solid rgba(255, 255, 255, 0.2);
@@ -37,6 +38,8 @@
     --footer-bg: rgb(0, 0, 0);
     --footer-h3-color: rgb(255, 94, 0);
     --slogen: rgb(255, 118, 39);
+    /* LM */
+    
 }
 
 html {
