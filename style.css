@@ -145,7 +145,7 @@ body.change {
     --revCard-bg: #0073ff;
     --contact-bg: #f0f4f4;
     --contact-container: #e2e1db;
-    --registration-inputs-bg: #48442c;
+    --registration-inputs-bg: #2e335c;
     --contact-form: #d3d0b7;
     --footer-bg: white;
     --footer-h3-color: rgb(0, 161, 255);
@@ -193,7 +193,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--cream);
+    color: #d3ad7f;
     border-bottom: 1px solid var(--cream);
 }
 
