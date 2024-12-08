@@ -7,8 +7,8 @@
 }
 
 :root {
-    --lBlue: #005aff;
     /*      DM      */
+    --scrollbar-thumb: #fff;
     --primary-color: #13131a;
     --circle-border: rgb(166, 182, 25);
     --border: .1rem solid rgba(255, 255, 255, 0.2);
@@ -59,7 +59,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: var(--font-color);
+    background-color: var(--scrollbar-thumb);
     border-radius: .5rem;
 }
 
@@ -121,11 +121,12 @@ body {
 }
 
 body.change {
+    --scrollbar-thumb: #6de609;
     --primary-color: #ecece5;
     --circle-border: rgb(89, 73, 230);
     --border: .1rem solid rgba(0, 0, 0, 0.2);
     --bg: #fefefc;
-    --cream: #2d5280;
+    --cream: #335c8f;
     --font-color: #000;
     --Logo-text-color: linear-gradient(to right, #00baff, #0073ff, #0028ff);
     --cart-counter: cyan;
@@ -134,8 +135,8 @@ body.change {
     --cart-quantity-border: #e8ebd8;
     --cart-quantity-outline: #f0f0e5;
     --btn-buy: #003ef8;
-    --home-bg: linear-gradient(rgba(241, 140, 138, 0.9), rgba(246, 246, 245, 0.9)), url("./pics/home.png");
-    --home-text-content-a: #005aff;
+    --home-bg: linear-gradient(rgba(193, 116, 116, 0.9), rgba(247, 247, 247, 0.9)), url("./pics/home.png");
+    --home-text-content-a: #2571ff;
     --about-bg: #ffffff;
     --popular-menu-bg: #eae4df;
     --swiper-button-bg: rgba(255, 255, 255, 0.5);

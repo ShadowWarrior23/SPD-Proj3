@@ -7,7 +7,8 @@ window.addEventListener("load", () => {
 
 const navbar = document.querySelector("nav");
 const menuButton = document.querySelector("#menu-button")
-menuButton.addEventListener("click", () => {
+menuButton.addEventListener("click", (event) => {
+    event.preventDefault();
     navbar.classList.toggle("active");
 })
 
