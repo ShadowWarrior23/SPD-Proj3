@@ -1,6 +1,6 @@
-# SPD-Proj3
+### SPD-Proj3
 
-## A projekt célja
+### A projekt célja
 
 Ez a projektmunka eredetileg azzal a céllal indult, hogy egy interaktív éttermi oldalt készítünk el. Az eddig megszokott, már-már hagyományos elemek (pl. HTML kártyák, sticky nav) mellett különböző interakciós részeket (pl. menü elrejtése; ajánlat szűrése, keresése; kosár használata) szándékoztunk beilleszteni.
 
@@ -23,4 +23,36 @@ Ez a projektmunka eredetileg azzal a céllal indult, hogy egy interaktív étter
     - a "Purchase" kattintásra tudomásul veszi a vásárlást, majd kiüresití kosarunk
 
 
-> ### A dokumentáció készítője ShadowWarrior23/x (Bence)
+### Fejlesztői útmutató
+
+### Felépítés 
+
+-**index.html**: Meghatározza az étterem oldal HTML-Struktúráját, a főbb elemeket.
+-**style.css**: Az oldal megjelenéséért felelős stílusokat tartalmazza, a kosár, a kártyák és contact kinézetért felel.
+-**app.js**: Az oldal funkcióit ideértve a kosárba helyezés és annak felépítése, a preloader megjelenése, a hamburger menü megjelenése, az elemek becsuszása, a menü kártyák csúszka vezérlésért és a világos-sötét mód megjelenítését tartalmazza.
+
+### Feladatok elosztása
+
+-Dizájn és a fő weboldal kinézete: Domán Martin és Szabó Bence
+-A menu oldalon lévő kártyák kinézete, a felugró kártya működése: Czmorek Ákos és Szabó Bence
+- fő oldal funkciói: Domán Martin és Szabó Bence
+- keresés és bejelentkezés: Szabó Bence
+- A szerencskerék weboldal kinézete és funkciói: Czmorek Ákos
+
+### Github hazsnálata
+
+-Mindenki eleinte a saját branchet haznált majd a main nevű branchben összesítettünk és itt folytattuk tovább a munkát.
+-**Commit üzenetek formája**: Rövid, érthető üzenetek
+
+### Fejlesztő környezetek, programozási nyelvek
+
+**Fejleszető környezet**: Visual Studio Code
+**Programozási nyelvek**: HTML, CSS, Javascript
+
+### Főbb funkciók
+
+**Kosár**: A add to card gomb lenyomásakor egy shopping cart Html elemben létrejön egy kártya div amelyet el lehet távolítani és növelni a számát. A növelés hatására a shopping cart-ban lévő ár folyamatosan frissíti magát. A purchase gomb megnyomával a kosár kiürül és alert-ben megköszöni a vásárlást.
+
+**Preloader**: Az oldal betöltése közben megjelenik a weboldal lógójával ellátot töltés animáció. Amikor az oldal betöltődött a preloader elűtnik.
+
+**Keresés**
