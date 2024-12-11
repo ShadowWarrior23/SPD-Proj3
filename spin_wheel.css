@@ -82,14 +82,14 @@ body{
 .container .wheel .number span{
     position: relative;
     transform: rotate(45deg);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
 }
 
 .container .wheel .number span::after{
-    content: '%';
+    /* content: '%'; */
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 5rem;
     font-weight: 500;
 }
