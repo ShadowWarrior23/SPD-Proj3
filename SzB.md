@@ -22,5 +22,13 @@ Ez a projektmunka eredetileg azzal a céllal indult, hogy egy interaktív étter
 - a bal felső sarkokban (mindkét oldalon) található egy kiskosár ikon, s ennek egyszeri megnyomásakor előjön egy kisablak, melyben minden kosarazott termék (a megfelelő mennyiségben) megjelenik, s ezeknek egység- és teljes ára is látszik
     - a "Purchase" kattintásra tudomásul veszi a vásárlást, majd kiüresití kosarunk
 
+## Fejlesztés
+
+- Fejlesztői- és segédfelületek
+  - Visual Studio Code
+  - Git, Github
+  - Trello
+  - Bootstrap
+- 
 
 > ### A dokumentáció készítője ShadowWarrior23/x (Bence)
