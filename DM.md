@@ -55,4 +55,5 @@ Ez a projektmunka eredetileg azzal a céllal indult, hogy egy interaktív étter
 
 **Preloader**: Az oldal betöltése közben megjelenik a weboldal lógójával ellátot töltés animáció. Amikor az oldal betöltődött a preloader elűtnik.
 
-**Keresés**
+**kártya csúszka vezérlés**: A kártyák közti váltogatás létrehozása a nyíl segítségével. A nyíl mellett a húzás lehetőséget is létrehozza. 
+
