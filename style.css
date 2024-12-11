@@ -135,7 +135,7 @@ body.change {
     --cart-quantity-border: #e8ebd8;
     --cart-quantity-outline: #f0f0e5;
     --btn-buy: #003ef8;
-    --home-bg: linear-gradient(rgba(193, 116, 116, 0.9), rgba(247, 247, 247, 0.9)), url("./pics/home.png");
+    --home-bg: linear-gradient(rgba(116, 193, 193, 0.9), rgba(247, 247, 247, 0.9)), url("./pics/home.png");
     --home-text-content-a: #2571ff;
     --about-bg: #ffffff;
     --popular-menu-bg: #eae4df;
