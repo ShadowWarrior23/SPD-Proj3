@@ -31,6 +31,4 @@ spinBtn.addEventListener("click", () => {
     overlay.classList.toggle("hidden");
     overlayText.textContent = message;
   }, 5500);
-
-  value += Math.ceil(Math.random() * 3600);
 });
