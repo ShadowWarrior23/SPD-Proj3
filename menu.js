@@ -59,7 +59,7 @@ cartContent.addEventListener("input", function (e) {
     if (e.target.classList.contains("cart-quantity")) {
         const cartBox = e.target.closest(".cart-box");
         const title = cartBox.querySelector(".cart-product-title").textContent;
-        const newQuantity = parseInt(e.target.value);
+        const newQuantity = e.target.value === "" ? 0 : parseInt(e.target.value);
 
         const item = itemsAdded.find(item => item.title === title);
         if (item) {

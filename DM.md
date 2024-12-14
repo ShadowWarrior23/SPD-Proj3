@@ -53,7 +53,7 @@ Ez a projektmunka eredetileg azzal a céllal indult, hogy egy interaktív étter
 **Fejleszető környezet**: Visual Studio Code
 **Programozási nyelvek**: HTML, CSS, Javascript
 
-### Főbb funkciók
+### Főbb funkciók amiket én készítettem
 
 **Kosár**: A add to card gomb lenyomásakor egy shopping cart Html elemben létrejön egy kártya div amelyet el lehet távolítani és növelni a számát. A növelés hatására a shopping cart-ban lévő ár folyamatosan frissíti magát. A purchase gomb megnyomával a kosár kiürül és alert-ben megköszöni a vásárlást.
 
