@@ -117,7 +117,8 @@ const bigCardsDiv4 = document.querySelector(".big-cards4");
 const bigCardsDiv5 = document.querySelector(".big-cards5");
 const bigCardsDiv6 = document.querySelector(".big-cards6");
 const bigCardsDiv7 = document.querySelector(".big-cards7");
-for (let i = 1; i <= 36; i++) {
+const bigCardsDiv8 = document.querySelector(".big-cards8");
+for (let i = 1; i <= 40; i++) {
     const div = document.createElement("div");
     div.classList.add("big-card", `big-card${i}`, "hidden");
     const box = document.createElement("div");
@@ -150,8 +151,11 @@ for (let i = 1; i <= 36; i++) {
     else if (i <= 28) {
         bigCardsDiv6.appendChild(div);
     }
-    else {
+    else if (i <= 36) {
         bigCardsDiv7.appendChild(div);
+    }
+    else {
+        bigCardsDiv8.appendChild(div);
     }
 
     const overlay = document.createElement("div");
@@ -167,7 +171,7 @@ const bigCards = document.querySelectorAll(".big-card");
 const xBtns = document.querySelectorAll(".big-card button");
 const overlays = document.querySelectorAll(".overlay");
 
-for (let i = 0; i <= 35; i++) {
+for (let i = 0; i <= 39; i++) {
     details[i].addEventListener("click", () => {
         bigCards[i].classList.toggle("hidden");
         overlays[i].classList.toggle("hidden");
