@@ -57,7 +57,18 @@ Ez a projektmunka eredetileg azzal a céllal indult, hogy egy interaktív étter
 
 **Kosár**: A add to card gomb lenyomásakor egy shopping cart Html elemben létrejön egy kártya div amelyet el lehet távolítani és növelni a számát. A növelés hatására a shopping cart-ban lévő ár folyamatosan frissíti magát. A purchase gomb megnyomával a kosár kiürül és alert-ben megköszöni a vásárlást.
 
-**Preloader**: Az oldal betöltése közben megjelenik a weboldal lógójával ellátot töltés animáció. Amikor az oldal betöltődött a preloader elűtnik.
+**Preloader**: Az oldal betöltése közben megjelenik a weboldal lógójával ellátot töltés animáció. Amikor az oldal betöltődött a preloader eltűnik.
 
 **kártya csúszka vezérlés**: A kártyák közti váltogatás létrehozása a nyíl segítségével. A nyíl mellett a húzás lehetőséget is létrehozza. 
+
+## Tesztelés 
+
+**Tesztelt Funkciók**
+
+| Tesztelt Funkció          |            Bemenet              |                                 Várt Eredmény                                       |                             Tényleges eredmény                                      | Megjegyzés |
+|---------------------------|---------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|------------|
+|     kosárba helyezés      | Add to cart és kosárra kattintás| a kosárban megjelenik az elem és a számláló növekszik/csökken                       | a kosárban megjelenik az elem és a számláló növekszik/csökken                       |   átment   |
+|     preloader             | Az oldal betöltése              | oldal betöltése előtt egy töltés animáció mejelenik majd eltűnik                    | oldal betöltése előtt egy töltés animáció mejelenik majd eltűnik                    |   átment   |
+|    A hamburger menü       | 991px alatt megjelenő ikon      | 991px alatt a menü eltünik és ha a hamburger ikonra kattintáskor oldalról megjelenik| 991px alatt a menü eltünik és ha a hamburger ikonra kattintáskor oldalról megjelenik|   átment   |
+|    A kártya csúszka       | a kártya mellett lévő nyilak    | a nyíl megnyomásakor a kártyák sorrendje változik                                   | a nyíl megnyomásakor a kártyák sorrendje változik                                   |   átment   |
 
