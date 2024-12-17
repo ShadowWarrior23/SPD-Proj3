@@ -581,6 +581,25 @@ nav a:hover {
     justify-content: space-around;
 }
 
+.main-btn a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0, 0, 2px, 10px, 1px rgba(0, 0, 0, .9);
+    transition: all 0.4s ease-out 0s;
+    border: 3px solid var(--card-main-btn-full-menu-send-button);
+    background-color: var(--card-main-btn-full-menu-send-button);
+    color: var(--font-color);
+    border-radius: 5px;
+}
+
+.main-btn a:hover {
+    background-color: transparent;
+    color: var(--card-main-btn-full-menu-send-button);
+}
+
 .main-btn button {
     text-decoration: none;
     padding: 10px 10px;
