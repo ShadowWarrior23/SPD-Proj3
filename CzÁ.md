@@ -69,13 +69,13 @@ Ez a projektmunka eredetileg azzal a céllal indult, hogy egy interaktív étter
 ## Tesztelés 
 
 **Tesztelt Funkciók**
-
+|---------------------------|---------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|------------|
 | Tesztelt Funkció          |            Bemenet              |                                 Várt Eredmény                                       |                             Tényleges eredmény                                      | Megjegyzés |
 |---------------------------|---------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|------------|
-|   nagy kárty működése     | detailsre kattintás             | felugrik a nagy kártya, az overlay miatt nem működik az oldal                       | felugrik a nagy kártya, az overlay miatt nem működik az oldal                       |   átment   |
-|     preloader             | Az oldal betöltése              | oldal betöltése előtt egy töltés animáció mejelenik majd eltűnik                    | oldal betöltése előtt egy töltés animáció mejelenik majd eltűnik                    |   átment   |
-|    A hamburger menü       | 991px alatt megjelenő ikon      | 991px alatt a menü eltünik és ha a hamburger ikonra kattintáskor oldalról megjelenik| 991px alatt a menü eltünik és ha a hamburger ikonra kattintáskor oldalról megjelenik|   átment   |
-|    A kártya csúszka       | a kártya mellett lévő nyilak    | a nyíl megnyomásakor a kártyák sorrendje változik                                   | a nyíl megnyomásakor a kártyák sorrendje változik                                   |   átment   |
+| nagy kárty működése       | detailsre kattintás             | felugrik a nagy kártya, az overlay miatt nem működik az oldal                       | felugrik a nagy kártya, az overlay miatt nem működik az oldal                       |   átment   |
+| szöveg kiírása            | detailsre kattintás             | a nagy kártyákon megjelenik a texts.js ben lévő megfelelő szöveg                    | a nagy kártyákon megjelenik a texts.js ben lévő megfelelő szöveg                    |   átment   |
+| A kipörgetett szám kiírása| a spin gombra kattintás         | a kerék pörgését befejezve jelenjen meg a várt szöveg                               | a kerék pörgését befejezve jelenjen meg a várt szöveg                               |   átment   |
+|---------------------------|---------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|------------|
 
 
 > ### A dokumentáció készítője Czmorek Ákos
