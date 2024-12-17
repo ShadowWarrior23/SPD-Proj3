@@ -27,4 +27,55 @@ Ez a projektmunka eredetileg azzal a céllal indult, hogy egy interaktív étter
 
 
 
+### Fejlesztői útmutató
+
+### Felépítés 
+
+-**menu.html**: Meghatározza a menu oldal HTML-Struktúráját, a főbb elemeket.
+-**menu.css**: Az oldal megjelenéséért felelős stílusokat tartalmazza az oldal kinézetért felel.
+-**menu.js**: Az oldal funkcióit ideértve a felugró kártyák dinamikus generálását, és azok megjelenítését tartalmazza.
+-**spin_wheel.html**: Meghatározza a szerencskerék oldal HTML-Struktúráját, a főbb elemeket.
+-**spin_wheel.css**: Az oldal megjelenéséért felelős stílusokat tartalmazza az oldal kinézetért felel.
+-**spin_wheel.js**: Az oldal funkcióit ideértve a forgás működését, és az eredmén kiírását tartalmazza.
+-**texts.js**: A felugró kártyák szövegeit, és azok kiíratását kiírását tartalmazza.
+
+### Feladatok elosztása
+
+- Dizájn és a fő weboldal kinézete: Domán Martin és Szabó Bence
+- A menu oldalon lévő kártyák kinézete, a felugró kártya működése: Czmorek Ákos és Szabó Bence
+- fő oldal funkciói: Domán Martin és Szabó Bence
+- keresés és bejelentkezés: Szabó Bence
+- A szerencskerék weboldal kinézete és funkciói: Czmorek Ákos
+- Szöveg megírésa: Domán Martin
+
+### Github hazsnálata
+
+-Mindenki eleinte a saját branchet haznált majd a main nevű branchben összesítettünk és itt folytattuk tovább a munkát.
+-**Commit üzenetek formája**: Rövid, érthető üzenetek
+
+### Fejlesztő környezetek, programozási nyelvek
+
+**Fejleszető környezet**: Visual Studio Code
+**Programozási nyelvek**: HTML, CSS, Javascript
+
+### Főbb funkciók amiket én készítettem
+
+**A felugró kártyák**: A "details" gombra kattintva elhomályosul a háttér, és előtérbe kerül az adott ételhez tartozó dinamikusan létre hozott nagy kártya, és egy overlay ami azért felel hogy az oldal ne legyen kattintható, és görgethető.
+
+**A footer**: Az oldal alján látható egy sáv ahol az elérhetőségek, social - media linkek, nyitvatartás, és a szlogenünk található.
+
+**A szerencskerék weboldal**: A menu oldal navigációjában található egy gomb ami elvisz egy új oldalra. ott van egy szerencsekerék amyelyen 1x lehet pörgetni, és a végén kiírja hogy mit pörgettél. Szerettem volna implementálni a kapott eredméynt a vásárláshoz is de már nem volt rá idő és túl bonyolult lett volna. 
+
+## Tesztelés 
+
+**Tesztelt Funkciók**
+
+| Tesztelt Funkció          |            Bemenet              |                                 Várt Eredmény                                       |                             Tényleges eredmény                                      | Megjegyzés |
+|---------------------------|---------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|------------|
+|   nagy kárty működése     | detailsre kattintás             | felugrik a nagy kártya, az overlay miatt nem működik az oldal                       | felugrik a nagy kártya, az overlay miatt nem működik az oldal                       |   átment   |
+|     preloader             | Az oldal betöltése              | oldal betöltése előtt egy töltés animáció mejelenik majd eltűnik                    | oldal betöltése előtt egy töltés animáció mejelenik majd eltűnik                    |   átment   |
+|    A hamburger menü       | 991px alatt megjelenő ikon      | 991px alatt a menü eltünik és ha a hamburger ikonra kattintáskor oldalról megjelenik| 991px alatt a menü eltünik és ha a hamburger ikonra kattintáskor oldalról megjelenik|   átment   |
+|    A kártya csúszka       | a kártya mellett lévő nyilak    | a nyíl megnyomásakor a kártyák sorrendje változik                                   | a nyíl megnyomásakor a kártyák sorrendje változik                                   |   átment   |
+
+
 > ### A dokumentáció készítője Czmorek Ákos
