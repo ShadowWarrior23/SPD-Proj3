@@ -957,7 +957,6 @@ footer .col {
     }
 
     .about-text-content p {
-        font-size: 1rem;
         line-height: 1.5;
         padding: 15px;
     }
@@ -968,8 +967,13 @@ footer .col {
         width: 50%;
     }
 
-    .about-iner-content {
+    .about-inner-content {
         display: flex;
         justify-content: center;
+        font-size: .5rem;
+    }
+
+    #about{
+        margin-bottom: 18rem;
     }
 }

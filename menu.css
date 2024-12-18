@@ -110,6 +110,7 @@ header {
     left: 0;
     right: 0;
     z-index: 4;
+    border: 0;
 }
 
 .header-content h3 {
@@ -143,7 +144,7 @@ nav a:hover {
 }
 
 #searchB {
-    height: 4.5vh;
+    height: 5vh;
     border-radius: 10px;
     border: none;
     width: 100%;
@@ -305,8 +306,8 @@ nav a:hover {
     cursor: pointer;
 }
 
-#mGlass {
-    margin: 0 .5rem;
+.row {
+    justify-content: center;
 }
 
 .hidden,
@@ -324,6 +325,10 @@ nav a:hover {
     border-radius: 15px;
     margin: 1rem auto;
     background-color: var(--black);
+}
+
+main {
+    padding-top: 1.5rem;
 }
 
 main h2 {
@@ -381,7 +386,7 @@ main h3 {
     top: 0;
     z-index: 10;
     height: 80vh;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     background-color: #0c0e26;
 }
@@ -493,6 +498,10 @@ footer .col {
     .cardCust {
         margin-bottom: 1rem;
     }
+
+    #appet {
+        margin-top: 0.5rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -527,7 +536,11 @@ footer .col {
     }
 
     .icons span {
-        top: 30%;
-        right: 30px;
+        top: 10%;
+        right: 10px;
+    }
+
+    .sBar {
+        display: none;
     }
 }
