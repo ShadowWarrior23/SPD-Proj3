@@ -36,12 +36,12 @@ function initializeScrollReveal() {
         duration: 2700,
     });
 
-    sr.reveal('.home-image', { delay: 300, origin: 'left' });
-    sr.reveal('.about-text-content', { delay: 300, origin: 'right' });
-    sr.reveal('#about-image', { delay: 300, origin: 'left' });
-    sr.reveal('.slide-container', { delay: 300, origin: 'left' });
-    sr.reveal('#review .row', { delay: 300, origin: 'right' });
-    sr.reveal('#blog .row', { delay: 300, origin: 'left' });
+    sr.reveal('.home-image', { delay: 200, origin: 'left' });
+    sr.reveal('.about-text-content', { delay: 200, origin: 'right' });
+    sr.reveal('#about-image', { delay: 200, origin: 'left' });
+    sr.reveal('.slide-container', { delay: 200, origin: 'left' });
+    sr.reveal('#review .row', { delay: 200, origin: 'right' });
+    sr.reveal('#blog .row', { delay: 200, origin: 'left' });
 }
 
 
