@@ -157,7 +157,10 @@ nav a:hover {
     border-radius: 5px;
 }
 
-
+.icons {
+    justify-content: center;
+    display: flex;
+}
 
 .icons a {
     color: #fff;
@@ -167,8 +170,8 @@ nav a:hover {
 }
 
 #spin_wheel {
-    height: 30%;
-    width: 30%;
+    height: 2.5vh;
+    width: 2.5vh;
 }
 
 .icons span {
@@ -536,8 +539,8 @@ footer .col {
     }
 
     .icons span {
-        top: 10%;
-        right: 10px;
+        top: 2vh;
+        left: 94vw;
     }
 
     .sBar {
